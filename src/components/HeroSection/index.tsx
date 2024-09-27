@@ -1,10 +1,13 @@
 import { Button, Image, Spacer } from "@nextui-org/react";
+import CentredLayout from "../ui/centredLayout";
 
 const HeroSection = () => {
 
 
 
     return(
+        <CentredLayout>
+
 <section className="dark">
     <div className="grid w-full lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
         <div className="justify-center pl-5 mr-auto place-self-center lg:col-span-7">
@@ -28,6 +31,7 @@ const HeroSection = () => {
                    </div>
     </div>
 </section>
+        </CentredLayout>
     )
 }
 
