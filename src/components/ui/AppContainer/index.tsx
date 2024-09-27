@@ -5,6 +5,7 @@ import { cn } from '../../../common/utils'
 import Footer from '../../partials/Footer'
 import NavBar from '../../partials/NavBar'
 import HeroSection from '../../../views/HeroSection'
+import CentredLayout from '../centredLayout'
 
 export function AppContainer({ className = '' }) {
     const navigate = useNavigate()
@@ -22,9 +23,11 @@ export function AppContainer({ className = '' }) {
                         </div>
                     }
                 >
+                    <CentredLayout>
                     <HeroSection/>
 
-                    {/* <Outlet /> */}
+                    </CentredLayout>
+
                 </React.Suspense>
 
                 {/* <Footer /> */}
