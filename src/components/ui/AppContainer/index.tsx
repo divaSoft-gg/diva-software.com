@@ -4,6 +4,7 @@ import { NextUIProvider, Spinner } from '@nextui-org/react'
 import { cn } from '../../../common/utils'
 import Footer from '../../partials/Footer'
 import NavBar from '../../partials/NavBar'
+import HeroSection from '../../../views/HeroSection'
 
 export function AppContainer({ className = '' }) {
     const navigate = useNavigate()
@@ -11,7 +12,7 @@ export function AppContainer({ className = '' }) {
     return (
         <NextUIProvider navigate={navigate}>
 
-            <NavBar />
+            {/* <NavBar /> */}
 
             <div className={cn('w-full h-screen', className)}>
                 <React.Suspense
@@ -21,10 +22,12 @@ export function AppContainer({ className = '' }) {
                         </div>
                     }
                 >
-                    <Outlet />
+                    <HeroSection/>
+
+                    {/* <Outlet /> */}
                 </React.Suspense>
 
-                <Footer />
+                {/* <Footer /> */}
             </div>
 
         </NextUIProvider >
