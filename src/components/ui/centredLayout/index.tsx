@@ -4,7 +4,7 @@ const CentredLayout = ({children} : {children : ReactNode})=>{
 
 
     return(
-        <div className="max-w-[1200px] mx-auto">
+        <div className="max-w-[var(--max-content-width)] mx-auto">
             {children}
         </div>
     )
