@@ -12,3 +12,26 @@ export const NAVIGATION_ARRAY = [
         link: '/something'
     }
 ]
+export const PRODUCTS_SECTION_ARRAY = [
+    {
+        id: 1,
+        websiteLogoPath: "images/products/green-genius.png",
+        websiteLogoAlt: "Green Genius Logo",
+        title: "Green Genius",
+        description:
+            "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi sunt porro minima, provident, iusto incidunt animi, aperiam quibusdam neque odio voluptates nam? Id harum animi quibusdam mollitia repellendus vel iusto!",
+        websitePreviewPath: "images/products/schrollama-images/green-genius.png",
+        websitePreviewAlt: "Green Genius Website",
+    },
+    {
+        id: 2,
+        websiteLogoPath: "images/products/diva-tex.png",
+        websiteLogoAlt: "DivaTex Logo",
+        title: "Diva Tex",
+        description:
+            "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi sunt porro minima, provident, iusto incidunt animi, aperiam quibusdam neque odio voluptates nam? Id harum animi quibusdam mollitia repellendus vel iusto!",
+        websitePreviewPath: "images/products/schrollama-images/diva-tex.png",
+        websitePreviewAlt: "Diva Tex Website",
+    },
+  
+];
