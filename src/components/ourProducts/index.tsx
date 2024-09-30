@@ -12,16 +12,19 @@ const ProductsSection = () => {
         progress: true,
         debug: false,
         offset: 0.5,
-        threshold: 2,
+        threshold: 4,
     };
 
     const onStepEnter = (step: { index: number, element: HTMLElement, direction: string }) => {
         setStep(step.index); // Store the current step index
     };
 
+
+
+
     return (
         <CenteredLayout>
-            <section className="relative flex flex-row flex-1 min-h-screen gap-8 p-0">
+            <section className="flex flex-row flex-1 min-h-screen gap-8 p-0 ">
                 <Scrollama
                     className="flex flex-col gap-8 basis-1/3"
                     offset={settings.offset}
@@ -33,8 +36,9 @@ const ProductsSection = () => {
                     {PRODUCTS_SECTION_ARRAY.map((element) => (
                         <Step
                             key={element.id}
-                            className="my-[25vh]"
+                            className='first:mt-[25vh] last:mb-[20vh]'
                         >
+
                             <div className="flex flex-col items-start gap-4 mb-16">
                                 <div className="flex flex-row items-center gap-4">
                                     <Image
