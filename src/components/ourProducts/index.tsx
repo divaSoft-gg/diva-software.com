@@ -10,83 +10,72 @@ const ProductsSection = () => {
 
     const settings = {
         progress: true,
-        debug: false,
-        offset: 0.2,
-        threshold: 0.2,
+        debug: true,
+        offset: 0.5,
+        threshold: 4,
     };
 
-    const styles = {
-        main: {
-            display: 'flex',
-            justifyContent: 'space-between',
-        },
-        graphic: {
-            flexBasis: '60%',
-            position: 'sticky',
-            width: '100%',
-            top: '160px',
-            alignSelf: 'flex-start',
-        },
-        scroller: {
-            flexBasis: '35%',
-        },
 
-    };
+
 
     const onStepEnter = (step: { index: number, element: HTMLElement, direction: string }) => {
         setStep(step.index); // Store the current step index
     };
 
-    return (
-        <CenteredLayout>
-            <section className="!relative w-full h-full  overflow-hidden bg-yellow-400 flex justify-between ">
-                <div className="bg-green-700 basis-1/3">
-                    <Scrollama
-                        offset={settings.offset}
-                        progress={settings.progress}
-                        threshold={settings.threshold}
-                        onStepEnter={onStepEnter}
-                        debug={settings.debug}
 
-                    >
-                        {PRODUCTS_SECTION_ARRAY.map((element) => (
-                            <Step className='bg-violet-700'>
-                                <div className="py-20">
-                                    <div className="flex flex-col items-start gap-4 ">
-                                        <div className="flex flex-row items-center gap-4">
-                                            <Image
-                                                src={element.websiteLogoPath}
-                                                width={50}
-                                                alt={element.websiteLogoAlt}
-                                            />
-                                            <h6 className="text-lg font-semibold tracking-tight text-gray-300">
-                                                {element.title}
-                                            </h6>
-                                        </div>
-                                        <p className="max-w-2xl mb-6 text-lg font-light text-left text-gray-300">
-                                            {element.description}
-                                        </p>
-                                        <Button variant="flat" color="warning" radius="lg" size="lg" className="w-fit">Visit Website</Button>
 
-                                    </div>
-                                </div>
-                            </Step>
-                        ))}
-                    </Scrollama>
-                </div>
 
-                {/* <div className="absolute bottom-0 right-0 w-20 h-20 bg-red-400"> */}
-                <Image
-                    src={`${PRODUCTS_SECTION_ARRAY[(step as number)]?.websitePreviewPath}`}
-                    width={700}
-                    height={350}
-                    className="sticky top-0 right-0"
-                />
-                {/* </div> */}
 
-            </section>
-        </CenteredLayout>
-    )
+
+    // return (
+    //     <CenteredLayout>
+    //         <section className="!relative flex justify-between ">
+    //             <div className="basis-1/3">
+    //                 <Scrollama
+    //                     offset={settings.offset}
+    //                     progress={settings.progress}
+    //                     threshold={settings.threshold}
+    //                     onStepEnter={onStepEnter}
+    //                     debug={settings.debug}
+
+    //                 >
+    //                     {PRODUCTS_SECTION_ARRAY.map((element) => (
+    //                         <Step className=''>
+    //                             <div className="py-20">
+    //                                 <div className="flex flex-col items-start gap-4 ">
+    //                                     <div className="flex flex-row items-center gap-4">
+    //                                         <Image
+    //                                             src={element.websiteLogoPath}
+    //                                             width={50}
+    //                                             alt={element.websiteLogoAlt}
+    //                                         />
+    //                                         <h6 className="text-lg font-semibold tracking-tight text-gray-300">
+    //                                             {element.title}
+    //                                         </h6>
+    //                                     </div>
+    //                                     <p className="max-w-2xl mb-6 text-lg font-light text-left text-gray-300">
+    //                                         {element.description}
+    //                                     </p>
+    //                                     <Button variant="flat" color="warning" radius="lg" size="lg" className="w-fit">Visit Website</Button>
+
+    //                                 </div>
+    //                             </div>
+    //                         </Step>
+    //                     ))}
+    //                 </Scrollama>
+    //             </div>
+    //             <div className="bg-yellow-300 basis-2/3">
+    //                 <Image
+    //                     src={`${PRODUCTS_SECTION_ARRAY[(step as number)]?.websitePreviewPath}`}
+    //                     width={700}
+    //                     height={350}
+    //                     className="sticky top-1/2"
+    //                 />
+    //             </div>
+
+    //         </section>
+    //     </CenteredLayout>
+    // )
 
 
 
@@ -106,8 +95,7 @@ const ProductsSection = () => {
                     {PRODUCTS_SECTION_ARRAY.map((element) => (
                         <Step
                             key={element.id}
-                            className='first:mt-[25vh] last:mb-[20vh]'
-                        >
+                            className='my-32'                        >
 
                             <div className="flex flex-col items-start gap-4 mb-16">
                                 <div className="flex flex-row items-center gap-4">
