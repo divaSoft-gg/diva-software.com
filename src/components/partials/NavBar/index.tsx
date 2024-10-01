@@ -6,7 +6,7 @@ export default function NavBar() {
     const navItems = NAVIGATION_ARRAY;
 
     return (
-        <Navbar className="w-ful">
+        <Navbar className="w-full">
             <NavbarBrand>
                 <Image src="/images/logo_white.png" alt="Logo" width={40} height={40} />
             </NavbarBrand>

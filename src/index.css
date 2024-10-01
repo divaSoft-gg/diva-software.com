@@ -6,4 +6,5 @@
 :root {
     /* VARIABLES */
     --max-content-width: 1200px;
+    --product-section-max-content-width: 500px
 }
