@@ -10,7 +10,7 @@ const ProductsSection = () => {
 
     const settings = {
         progress: true,
-        debug: true,
+        debug: false,
         offset: 0.5,
         threshold: 4,
     };
@@ -19,73 +19,12 @@ const ProductsSection = () => {
 
 
     const onStepEnter = (step: { index: number, element: HTMLElement, direction: string }) => {
-        setStep(step.index); // Store the current step index
+        setStep(step.index);
     };
-
-
-
-
-
-
-    // return (
-    //     <CenteredLayout>
-    //         <section className="!relative flex justify-between ">
-    //             <div className="basis-1/3">
-    //                 <Scrollama
-    //                     offset={settings.offset}
-    //                     progress={settings.progress}
-    //                     threshold={settings.threshold}
-    //                     onStepEnter={onStepEnter}
-    //                     debug={settings.debug}
-
-    //                 >
-    //                     {PRODUCTS_SECTION_ARRAY.map((element) => (
-    //                         <Step className=''>
-    //                             <div className="py-20">
-    //                                 <div className="flex flex-col items-start gap-4 ">
-    //                                     <div className="flex flex-row items-center gap-4">
-    //                                         <Image
-    //                                             src={element.websiteLogoPath}
-    //                                             width={50}
-    //                                             alt={element.websiteLogoAlt}
-    //                                         />
-    //                                         <h6 className="text-lg font-semibold tracking-tight text-gray-300">
-    //                                             {element.title}
-    //                                         </h6>
-    //                                     </div>
-    //                                     <p className="max-w-2xl mb-6 text-lg font-light text-left text-gray-300">
-    //                                         {element.description}
-    //                                     </p>
-    //                                     <Button variant="flat" color="warning" radius="lg" size="lg" className="w-fit">Visit Website</Button>
-
-    //                                 </div>
-    //                             </div>
-    //                         </Step>
-    //                     ))}
-    //                 </Scrollama>
-    //             </div>
-    //             <div className="bg-yellow-300 basis-2/3">
-    //                 <Image
-    //                     src={`${PRODUCTS_SECTION_ARRAY[(step as number)]?.websitePreviewPath}`}
-    //                     width={700}
-    //                     height={350}
-    //                     className="sticky top-1/2"
-    //                 />
-    //             </div>
-
-    //         </section>
-    //     </CenteredLayout>
-    // )
-
-
-
-
-
     return (
         <CenteredLayout>
-            <section className="flex flex-row flex-1 min-h-screen gap-8 p-0 ">
+            <section className="grid grid-cols-[2fr_4fr] w-full gap-10 min-h-screen py-10">
                 <Scrollama
-                    className="flex flex-col gap-8 basis-1/3"
                     offset={settings.offset}
                     progress={settings.progress}
                     threshold={settings.threshold}
@@ -93,11 +32,8 @@ const ProductsSection = () => {
                     debug={settings.debug}
                 >
                     {PRODUCTS_SECTION_ARRAY.map((element) => (
-                        <Step
-                            key={element.id}
-                            className='my-32'                        >
-
-                            <div className="flex flex-col items-start gap-4 mb-16">
+                        <Step key={element.id} className="mb-[60vh]">
+                            <div className="flex flex-col items-start ">
                                 <div className="flex flex-row items-center gap-4">
                                     <Image
                                         src={element.websiteLogoPath}
@@ -111,24 +47,33 @@ const ProductsSection = () => {
                                 <p className="max-w-2xl mb-6 text-lg font-light text-left text-gray-300">
                                     {element.description}
                                 </p>
-                                <Button variant="flat" color="warning" radius="lg" size="lg" className="w-fit">Visit Website</Button>
-
+                                <Button
+                                    variant="flat"
+                                    color="warning"
+                                    radius="lg"
+                                    size="lg"
+                                    className="w-fit"
+                                >
+                                    Visit Website
+                                </Button>
                             </div>
                         </Step>
                     ))}
                 </Scrollama>
-
-                <div className=" flex flex-wrap content-center justify-center sticky top-8 basis-2/3 h-[calc(100vh-4rem)]    transition-colors duration-150 ease-in-out">
+                <div className="sticky flex justify-center w-auto h-screen p-6 top-1/4 ">
+                    <div className="absolute w-full h-[500px] bg-green-500 -z-10 rounded-xl rotate-3 top-1/4 -translate-y-1/2"></div>
 
                     <Image
                         src={`${PRODUCTS_SECTION_ARRAY[(step as number)]?.websitePreviewPath}`}
-                        width={700}
                         height={350}
+                        width={700}
+
+                        className="w-full"
                     />
                 </div>
             </section>
         </CenteredLayout>
-    );
+    )
 };
 
 export default ProductsSection;
