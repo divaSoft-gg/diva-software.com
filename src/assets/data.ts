@@ -39,3 +39,31 @@ export const PRODUCTS_SECTION_ARRAY = [
     },
 
 ];
+
+export const OUR_CLIENTS = [
+    {
+        id: 1,
+        logo: "images/clients/client1.svg",
+        name: "Alsico"
+    },
+    {
+        id: 2,
+        logo: "/images/clients/client2.svg",
+        name: "Granjard"
+    },
+    {
+        id: 3,
+        logo: "/images/clients/client3.svg",
+        name: "Aubade"
+    },
+    {
+        id: 4,
+        logo: "/images/clients/client4.svg",
+        name: "Bleu Oceane"
+    },
+    {
+        id: 5,
+        logo: "/images/clients/client5.svg",
+        name: "NAFNAF"
+    },
+]

@@ -5,6 +5,7 @@ import { Button, Image } from "@nextui-org/react";
 import CenteredLayout from "../ui/centredLayout";
 import { PRODUCTS_SECTION_ARRAY } from "../../assets/data";
 import { IProduct, IStep } from "../../common/types";
+import SectionsTitle from "../shared/sectionTitle";
 
 export default function ProductsSection() {
 
@@ -22,11 +23,9 @@ export default function ProductsSection() {
     };
 
     return (
-        <section className="my-[20vh]">
+        <section className="my-[20h]">
             <CenteredLayout>
-
-                <h1 className="text-6xl font-semibold text-left mb-60 leading-normaltext-white">Our Products</h1>
-
+                <SectionsTitle title='Our Products' mb="mb-60" />
                 <section className="grid grid-cols-[2fr_4fr] w-full gap-10 min-h-screen">
                     <Scrollama
                         offset={settings.offset}
