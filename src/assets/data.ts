@@ -1,3 +1,5 @@
+import { LatLngTuple } from "leaflet";
+
 export const NAVIGATION_ARRAY = [
     {
         label: 'Accueil',
@@ -76,3 +78,5 @@ export const HOME_PAGE_COPY = {
         subTitle: "More than 140+ businesses have trusted Squareboat to grow using our design and technology expertise.",
     }
 }
+export const  LEAFLET_CENTER_MAP :LatLngTuple= [35.8310, 10.594233534131954]
+export const MARKER_POSITION  :LatLngTuple= [35.835150953310574, 10.594233534131954]
