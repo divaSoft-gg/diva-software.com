@@ -1,4 +1,4 @@
-import { Button, Image } from "@nextui-org/react";
+import { Button, Image, Spacer } from "@nextui-org/react";
 import CentredLayout from "../ui/centredLayout";
 
 const HeroSection = () => {
