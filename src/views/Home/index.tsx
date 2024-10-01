@@ -8,12 +8,8 @@ export default function Home() {
     return (
         <>
             <HeroSection />
-            <div className="bg-[#161616]">
-                <OurClients />
-            </div>
+            <OurClients />
             <ProductsSection />
-
-
         </>
     )
 }

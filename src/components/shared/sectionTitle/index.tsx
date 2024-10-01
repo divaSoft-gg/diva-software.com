@@ -1,24 +1,9 @@
-import { cn } from "../../../common/utils";
-
-export default function SectionsTitle({ title, mb = 'mb-0', paragraph }: { title: string, mb?: string, paragraph?: string }) {
+export default function SectionsTitle({ title, subtitle }: { title: string, subtitle?: string }) {
     return (
-        <div className={`${mb}`}>
-            <h1
-                className={cn(
-                    "text-6xl font-semibold text-left leading-normal text-white",
-                )}
-            >
-                {title}
-            </h1>
-            {paragraph && (
+        <div>
+            <h1 className="text-6xl font-semibold leading-normal text-left text-white">{title}</h1>
 
-                <p className="mt-2 text-lg leading-8 muted">
-                    {paragraph}
-
-                </p>
-            )}
+            {subtitle && <p className="mt-2 text-lg leading-8 muted">{subtitle}</p>}
         </div>
-
-
     )
 }

@@ -67,3 +67,12 @@ export const OUR_CLIENTS = [
         name: "NAFNAF"
     },
 ]
+
+// STATIC COPY
+
+export const HOME_PAGE_COPY = {
+    ourClients: {
+        title: "Our Clients",
+        subTitle: "More than 140+ businesses have trusted Squareboat to grow using our design and technology expertise.",
+    }
+}
