@@ -20,7 +20,7 @@ export const PRODUCTS_SECTION_ARRAY = [
         title: "Green Genius",
         description:
             "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi sunt porro minima, provident, iusto incidunt animi, aperiam quibusdam neque odio voluptates nam? Id harum animi quibusdam mollitia repellendus vel iusto!",
-        websitePreviewPath: "images/products/schrollama-images/green-genius.png",
+        websitePreviewPath: "images/products/schrollama-images/product_demo.gif",
         websitePreviewAlt: "Green Genius Website",
     },
     {
@@ -30,8 +30,8 @@ export const PRODUCTS_SECTION_ARRAY = [
         title: "Diva Tex",
         description:
             "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi sunt porro minima, provident, iusto incidunt animi, aperiam quibusdam neque odio voluptates nam? Id harum animi quibusdam mollitia repellendus vel iusto!",
-        websitePreviewPath: "images/products/schrollama-images/diva-tex.png",
+        websitePreviewPath: "images/products/schrollama-images/product_demo_02.gif",
         websitePreviewAlt: "Diva Tex Website",
     },
-  
+
 ];
