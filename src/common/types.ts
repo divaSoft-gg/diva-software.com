@@ -24,3 +24,13 @@ export interface IProduct {
         rotation: string
     }
 }
+
+/**
+ * @description
+ * Interface for DivaSoftware clients
+ * Used in the home component to show most popular clients
+ */
+export interface IClient {
+    logo: string;
+    name: string;
+}
