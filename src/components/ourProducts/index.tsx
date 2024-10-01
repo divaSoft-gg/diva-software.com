@@ -4,9 +4,11 @@ import { Scrollama, Step } from "@ap.cx/react-scrollama-wrapper";
 import { Button, Image } from "@nextui-org/react";
 import CenteredLayout from "../ui/centredLayout";
 import { PRODUCTS_SECTION_ARRAY } from "../../assets/data";
+import { IProduct, IStep } from "../../common/types";
 
-const ProductsSection = () => {
-    const [step, setStep] = useState<number | null>(0);
+export default function ProductsSection() {
+
+    const [step, setStep] = useState<number>(0);
 
     const settings = {
         progress: true,
@@ -15,65 +17,75 @@ const ProductsSection = () => {
         threshold: 4,
     };
 
-
-
-
-    const onStepEnter = (step: { index: number, element: HTMLElement, direction: string }) => {
+    const onStepEnter = (step: IStep) => {
         setStep(step.index);
     };
+
     return (
-        <CenteredLayout>
-            <section className="grid grid-cols-[2fr_4fr] w-full gap-10 min-h-screen py-10">
-                <Scrollama
-                    offset={settings.offset}
-                    progress={settings.progress}
-                    threshold={settings.threshold}
-                    onStepEnter={onStepEnter}
-                    debug={settings.debug}
-                >
-                    {PRODUCTS_SECTION_ARRAY.map((element) => (
-                        <Step key={element.id} className="mb-[60vh]">
-                            <div className="flex flex-col items-start ">
-                                <div className="flex flex-row items-center gap-4">
-                                    <Image
-                                        src={element.websiteLogoPath}
-                                        width={50}
-                                        alt={element.websiteLogoAlt}
-                                    />
-                                    <h6 className="text-lg font-semibold tracking-tight text-gray-300">
-                                        {element.title}
-                                    </h6>
-                                </div>
-                                <p className="max-w-2xl mb-6 text-lg font-light text-left text-gray-300">
-                                    {element.description}
-                                </p>
-                                <Button
-                                    variant="flat"
-                                    color="warning"
-                                    radius="lg"
-                                    size="lg"
-                                    className="w-fit"
-                                >
-                                    Visit Website
-                                </Button>
+        <section className="my-[20vh]">
+            <CenteredLayout>
+
+                <h1 className="text-6xl font-semibold text-left mb-60 leading-normaltext-white">Our Products</h1>
+
+                <section className="grid grid-cols-[2fr_4fr] w-full gap-10 min-h-screen">
+                    <Scrollama
+                        offset={settings.offset}
+                        progress={settings.progress}
+                        threshold={settings.threshold}
+                        onStepEnter={onStepEnter}
+                        debug={settings.debug}
+                    >
+                        {
+                            PRODUCTS_SECTION_ARRAY.map((element: IProduct, index: number) => (
+                                <Step key={index} className="mb-[60vh]">
+                                    <div className="flex flex-col items-start gap-8">
+                                        <div className="flex flex-col gap-2">
+                                            <div className="flex flex-row items-center gap-4">
+                                                <Image
+                                                    src={element.logo}
+                                                    width={40}
+                                                    alt="logo"
+                                                />
+                                                <h6 className="text-xl font-semibold tracking-tight text-gray-300">{element.name}</h6>
+                                            </div>
+                                            <h3 className="text-3xl font-semibold tracking-tight text-left">{element.slug}</h3>
+                                        </div>
+                                        <p className="text-xl font-light text-left text-gray-300">{element.description}</p>
+                                        <Button
+                                            variant="shadow"
+                                            color="default"
+                                            radius="lg"
+                                            size="lg"
+                                            className="w-fit"
+                                        >
+                                            Discover more
+                                        </Button>
+                                    </div>
+                                </Step>
+                            ))
+                        }
+                    </Scrollama>
+                    <div className="sticky flex justify-center w-auto h-screen top-1/4">
+                        <div className="relative">
+                            <div
+                                className="absolute w-full h-[500px] -z-10 rounded-xl -top-8 left-0 transition-all ease-in-out duration-250"
+                                style={{
+                                    backgroundColor: PRODUCTS_SECTION_ARRAY[step].customStyles.bgColor,
+                                    rotate: PRODUCTS_SECTION_ARRAY[step].customStyles.rotation,
+                                }}
+                            >
                             </div>
-                        </Step>
-                    ))}
-                </Scrollama>
-                <div className="sticky flex justify-center w-auto h-screen p-6 top-1/4 ">
-                    <div className="absolute w-full h-[500px] bg-green-500 -z-10 rounded-xl rotate-3 top-1/4 -translate-y-1/2"></div>
 
-                    <Image
-                        src={`${PRODUCTS_SECTION_ARRAY[(step as number)]?.websitePreviewPath}`}
-                        height={350}
-                        width={700}
+                            <Image
+                                src={`${PRODUCTS_SECTION_ARRAY[(step as number)]?.preview}`}
+                                width={700}
+                                className="w-full"
+                            />
+                        </div>
+                    </div>
+                </section>
+            </CenteredLayout>
+        </section>
 
-                        className="w-full"
-                    />
-                </div>
-            </section>
-        </CenteredLayout>
     )
 };
-
-export default ProductsSection;
