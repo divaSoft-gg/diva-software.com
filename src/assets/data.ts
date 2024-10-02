@@ -1,4 +1,11 @@
+import { CiMail } from "react-icons/ci";
+import { FiPhone } from "react-icons/fi";
+import { FiMapPin } from "react-icons/fi";
+
+
+
 import { LatLngTuple } from "leaflet";
+import { IconType } from "react-icons/lib";
 
 export const NAVIGATION_ARRAY = [
     {
@@ -78,5 +85,11 @@ export const HOME_PAGE_COPY = {
         subTitle: "More than 140+ businesses have trusted Squareboat to grow using our design and technology expertise.",
     }
 }
-export const  LEAFLET_CENTER_MAP :LatLngTuple= [35.8310, 10.594233534131954]
+export const  LEAFLET_CENTER_MAP :LatLngTuple= [35.8355, 10.594233534131954]
 export const MARKER_POSITION  :LatLngTuple= [35.835150953310574, 10.594233534131954]
+export const CONTACT_US_METHODS : {id: number, icon:IconType , title: string}[] = [
+    {id: 1 , icon : CiMail,title: 'example@example.com'  },
+    {id: 2 , icon : FiPhone , title: '4054 Av. de Yasser Arafat, Sousse'},
+    {id: 3 , icon : FiMapPin, title: '(+216)53333850'},
+
+]

@@ -2,33 +2,50 @@ import { Button, Input, Textarea } from "@nextui-org/react";
 import CenteredLayout from "../ui/centredLayout";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import 'leaflet/dist/leaflet.css';
-import { LEAFLET_CENTER_MAP, MARKER_POSITION } from "../../assets/data";
+import { CONTACT_US_METHODS, LEAFLET_CENTER_MAP, MARKER_POSITION } from "../../assets/data";
+import SectionsTitle from "../shared/sectionTitle";
 
 
 
 export default function ContactUs() {
-    return (
-        <div className="bg-[#161616]">
-            <CenteredLayout>
-                <section className="flex flex-row justify-between gap-8 py-8">
-                    <MapContainer
-                        center={LEAFLET_CENTER_MAP}
-                        zoom={15}
-                        scrollWheelZoom={false}
-                        className="flex-1 h-auto p-8"
-                    >
-                        <TileLayer
-                            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                        />
-                        <Marker position={MARKER_POSITION}>
-                            <Popup>
-                                Diva Software, Third Floor
-                            </Popup>
-                        </Marker>
-                    </MapContainer>
 
-                    <div className="flex-1 p-8">
-                        <h2 className="text-2xl font-bold">Contact Us</h2>
+
+    return (
+        <div className="bg-section-background">
+            <CenteredLayout>
+                <SectionsTitle title="Contact Us" subtitle="Your Questions, Our Answers" />
+                <section className="grid grid-cols-[500px_1fr] items-center gap-8 py-8">
+                    <div className="flex flex-col items-center justify-center gap-8 ">
+                        <div className="grid grid-rows-3 gap-4 px-4">
+                            {CONTACT_US_METHODS.map((element) => (
+                                <div key={element.id} className="flex items-center gap-6">
+                                    <element.icon className="w-6 h-6 text-white" />  {/* Correctly render the icon */}
+                                    <span className="text-sm">{element.title}</span>
+                                </div>
+                            ))}
+
+                        </div>
+                        <MapContainer
+                            center={LEAFLET_CENTER_MAP}
+                            zoom={15}
+                            scrollWheelZoom={false}
+                            className="h-[200px] w-[400px]"
+
+                        >
+                            <TileLayer
+                                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                            />
+                            <Marker position={MARKER_POSITION}>
+                                <Popup>
+                                    Diva Software, Third Floor
+                                </Popup>
+                            </Marker>
+                        </MapContainer>
+                    </div>
+
+
+
+                    <div className="align-middle ">
                         <form
                             name="diva-software-submissions"
                             method="POST"
@@ -79,6 +96,8 @@ export default function ContactUs() {
                                 <Button color="primary" size="lg" className="col-span-2" type="submit">Envoyer</Button>
                             </div>
                         </form>
+
+
                     </div>
                 </section>
             </CenteredLayout>
