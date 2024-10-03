@@ -1,3 +1,5 @@
+import { IconType } from "react-icons/lib";
+
 /**
  * @description
  * Interface for Scrollama step
@@ -33,4 +35,8 @@ export interface IProduct {
 export interface IClient {
     logo: string;
     name: string;
+}
+
+export interface ContactUsMethods {
+    id: number, icon:IconType , title: string
 }
