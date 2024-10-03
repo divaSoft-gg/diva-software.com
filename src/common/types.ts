@@ -37,6 +37,7 @@ export interface IClient {
     name: string;
 }
 
-export interface ContactUsMethods {
-    id: number, icon:IconType , title: string
+export interface IContactUsMethods {
+    icon: IconType;
+    title: string;
 }

@@ -2,48 +2,50 @@ import { Button, Input, Textarea } from "@nextui-org/react";
 import CenteredLayout from "../ui/centredLayout";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import 'leaflet/dist/leaflet.css';
-import { CONTACT_US_METHODS, LEAFLET_CENTER_MAP, MARKER_POSITION } from "../../assets/data";
+import { CONTACT_US_METHODS, HOME_PAGE_COPY } from "../../assets/data";
 import SectionsTitle from "../shared/sectionTitle";
-import { ContactUsMethods } from "../../common/types";
+import { IContactUsMethods } from "../../common/types";
+import { LatLngTuple } from "leaflet";
 
 
 
 export default function ContactUs() {
+
+    const LEAFLET_CENTER_MAP: LatLngTuple = [35.8355, 10.594233534131954];
+
+    const MARKER_POSITION: LatLngTuple = [35.835150953310574, 10.594233534131954];
+
+
     return (
-        <div className="bg-section-background">
+        <div className="py-12 bg-section-background">
             <CenteredLayout>
 
-                <SectionsTitle title="Contact Us" subtitle="Your Questions, Our Answers" />
+                <SectionsTitle title={HOME_PAGE_COPY.contactUs.title} subtitle={HOME_PAGE_COPY.contactUs.subTitle} />
 
-                <section className="grid grid-cols-[500px_1fr] items-center gap-8">
+                <section className="grid grid-cols-[500px_1fr] items-end gap-8 mt-12">
+
                     <div className="flex flex-col items-end justify-center gap-4 ">
                         {/* Contact Methods Section */}
-                        <div className="w-full">
-                            <ul className="list-none">
-                                {CONTACT_US_METHODS.map((element: ContactUsMethods) => (
-                                    <li key={element.id} className="flex items-center my-4">
-                                        <element.icon className="w-6 h-6 mx-2 text-white" />
+                        <ul className="w-full list-none">
+                            {
+                                CONTACT_US_METHODS.map((element: IContactUsMethods, index: number) => (
+                                    <li key={index} className="flex items-center gap-2 my-4">
+                                        <element.icon className="w-4 h-4 !text-gray-200" />
                                         <span className="text-sm">{element.title}</span>
                                     </li>
-                                ))}
-                            </ul>
-
-                        </div>
+                                ))
+                            }
+                        </ul>
                         {/* Map Section */}
                         <MapContainer
                             center={LEAFLET_CENTER_MAP}
                             zoom={15}
                             scrollWheelZoom={false}
                             className="h-[200px] w-full"
-
                         >
-                            <TileLayer
-                                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                            />
+                            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
                             <Marker position={MARKER_POSITION}>
-                                <Popup>
-                                    Diva Software, Third Floor
-                                </Popup>
+                                <Popup>Diva Software, Third Floor (office 30)</Popup>
                             </Marker>
                         </MapContainer>
                     </div>
@@ -53,7 +55,6 @@ export default function ContactUs() {
                         method="POST"
                         data-netlify="true"
                         netlify-honeypot="bot-field"
-                        className="my-12"
                     >
                         <input type="hidden" name="form-name" value="diva-software-submissions" />
                         <div className="flex flex-col w-full gap-4 lg:grid lg:grid-cols-2">
@@ -98,6 +99,7 @@ export default function ContactUs() {
                             <Button color="default" size="lg" className="col-span-2" type="submit">Envoyer</Button>
                         </div>
                     </form>
+
                 </section>
             </CenteredLayout>
         </div>

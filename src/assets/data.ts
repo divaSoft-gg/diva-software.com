@@ -1,7 +1,6 @@
 import { CiMail } from "react-icons/ci";
-import { FiPhone,FiMapPin } from "react-icons/fi";
-import { LatLngTuple } from "leaflet";
-import { ContactUsMethods } from "../common/types";
+import { FiPhone, FiMapPin } from "react-icons/fi";
+import { IContactUsMethods } from "../common/types";
 
 export const NAVIGATION_ARRAY = [
     {
@@ -73,19 +72,22 @@ export const OUR_CLIENTS = [
     },
 ]
 
+export const CONTACT_US_METHODS: IContactUsMethods[] = [
+    { icon: CiMail, title: 'example@example.com' },
+    { icon: FiMapPin, title: '4054 Av. de Yasser Arafat, Sousse' },
+    { icon: FiPhone, title: '(+216)53 333 850' },
+
+]
+
 // STATIC COPY
 
 export const HOME_PAGE_COPY = {
     ourClients: {
         title: "Our Clients",
         subTitle: "More than 140+ businesses have trusted Squareboat to grow using our design and technology expertise.",
+    },
+    contactUs: {
+        title: "Contact Us",
+        subTitle: "We would love to hear from you. Please fill out the form below and we will get back to you shortly.",
     }
 }
-export const  LEAFLET_CENTER_MAP :LatLngTuple= [35.8355, 10.594233534131954]
-export const MARKER_POSITION  :LatLngTuple= [35.835150953310574, 10.594233534131954]
-export const CONTACT_US_METHODS : ContactUsMethods[] = [
-    {id: 1 , icon : CiMail,title: 'example@example.com'  },
-    {id: 2 , icon : FiMapPin , title: '4054 Av. de Yasser Arafat, Sousse'},
-    {id: 3 , icon : FiPhone, title: '(+216)53333850'},
-    
-]
