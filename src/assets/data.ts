@@ -73,9 +73,9 @@ export const OUR_CLIENTS = [
 ]
 
 export const CONTACT_US_METHODS: IContactUsMethods[] = [
-    { icon: CiMail, title: 'example@example.com' },
-    { icon: FiMapPin, title: '4054 Av. de Yasser Arafat, Sousse' },
-    { icon: FiPhone, title: '(+216)53 333 850' },
+    { icon: CiMail, value: 'example@example.com', title: 'Email'  },
+    { icon: FiMapPin, value: '4054 Av. de Yasser Arafat, Sousse', title:'Address'  },
+    { icon: FiPhone, value: '(+216) 53 333 850' , title: 'Phone'},
 
 ]
 

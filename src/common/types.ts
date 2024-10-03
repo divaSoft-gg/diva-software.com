@@ -40,4 +40,5 @@ export interface IClient {
 export interface IContactUsMethods {
     icon: IconType;
     title: string;
+    value:string;
 }
