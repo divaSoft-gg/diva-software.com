@@ -1,3 +1,7 @@
+import { CiMail } from "react-icons/ci";
+import { FiPhone, FiMapPin } from "react-icons/fi";
+import { IContactUsMethods } from "../common/types";
+
 export const NAVIGATION_ARRAY = [
     {
         label: 'Accueil',
@@ -68,11 +72,22 @@ export const OUR_CLIENTS = [
     },
 ]
 
+export const CONTACT_US_METHODS: IContactUsMethods[] = [
+    { icon: CiMail, value: 'example@example.com', title: 'Email'  },
+    { icon: FiMapPin, value: '4054 Av. de Yasser Arafat, Sousse', title:'Address'  },
+    { icon: FiPhone, value: '(+216) 53 333 850' , title: 'Phone'},
+
+]
+
 // STATIC COPY
 
 export const HOME_PAGE_COPY = {
     ourClients: {
         title: "Our Clients",
         subTitle: "More than 140+ businesses have trusted Squareboat to grow using our design and technology expertise.",
+    },
+    contactUs: {
+        title: "Contact Us",
+        subTitle: "We would love to hear from you. Please fill out the form below and we will get back to you shortly.",
     }
 }
