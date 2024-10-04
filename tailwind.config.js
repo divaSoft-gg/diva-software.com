@@ -10,11 +10,7 @@ export default {
 
   ],
   theme: {
-    extend: {
-      colors: {
-        'section-background': '#212020',
-      },
-    },
+    extend: {},
   },
   darkMode: "class",
   plugins: [
