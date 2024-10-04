@@ -5,6 +5,7 @@ import 'leaflet/dist/leaflet.css';
 import { CONTACT_US_METHODS, HOME_PAGE_COPY } from "../../assets/data";
 import { IContactUsMethods } from "../../common/types";
 import { LatLngTuple } from "leaflet";
+import './index.css';
 
 
 
@@ -17,6 +18,8 @@ export default function ContactUs() {
     return (
         <CenteredLayout>
             <div className="w-full h-[500px] relative flex flex-row gap-12">
+
+                {/* Left: Map */}
                 <div className="relative min-w-[500px] h-full">
 
                     <MapContainer
@@ -26,13 +29,13 @@ export default function ContactUs() {
                         className="w-full h-full -z-10"
                     >
                         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-
-                        {/* Marker */}
                         <Marker position={MARKER_POSITION}>
                             <Popup>We are here!</Popup>
                         </Marker>
                     </MapContainer>
+
                     <div className="absolute top-0 left-0 z-10 w-full h-full bg-black opacity-70 gradientOverlay"></div>
+
                     <div className="absolute top-0 left-0 z-10 flex flex-col w-full h-full gap-24 p-8">
                         <div>
                             <h1 className="text-4xl font-bold leading-normal text-left text-white">{HOME_PAGE_COPY.contactUs.title}</h1>
@@ -41,22 +44,17 @@ export default function ContactUs() {
                         </div>
                         <ul className="flex flex-col w-full gap-8 list-none ">
                             {CONTACT_US_METHODS.map((element: IContactUsMethods, index: number) => (
-                                <li key={index} className="flex flex-col gap-3 ">
+                                <li key={index} className="flex flex-col gap-1 ">
                                     <h6 className="text-xs font-semibold text-white ">{element.title}</h6>
                                     <span className="text-sm font-normal text-white">{element.value}</span>
                                 </li>
                             ))}
                         </ul>
-
                     </div>
-
 
                 </div>
 
-
-
-
-                {/* Right: Form Section */}
+                {/* Right: Form */}
                 <form
                     name="diva-software-submissions"
                     method="POST"
@@ -106,7 +104,6 @@ export default function ContactUs() {
                         <Button color="default" size="lg" className="text-black bg-white light:text-white light:bg-black" type="submit">Envoyer</Button>
                     </div>
                 </form>
-
 
             </div>
         </CenteredLayout>
