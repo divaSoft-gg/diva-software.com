@@ -5,9 +5,9 @@ import { IconType } from "react-icons/lib";
  * Interface for Scrollama step
  */
 export interface IStep {
-    index: number;
-    element: HTMLElement;
-    direction: string;
+  index: number;
+  element: HTMLElement;
+  direction: string;
 }
 
 /**
@@ -16,15 +16,15 @@ export interface IStep {
  * Used in the Scrollama component (our products section)
  */
 export interface IProduct {
-    logo: string;
-    name: string;
-    slug: string;
-    description: string;
-    preview: string;
-    customStyles: {
-        bgColor: string,
-        rotation: string
-    }
+  logo: string;
+  name: string;
+  slug: string;
+  description: string;
+  preview: string;
+  customStyles: {
+    bgColor: string;
+    rotation: string;
+  };
 }
 
 /**
@@ -33,12 +33,20 @@ export interface IProduct {
  * Used in the home component to show most popular clients
  */
 export interface IClient {
-    logo: string;
-    name: string;
+  logo: string;
+  name: string;
 }
 
 export interface IContactUsMethods {
-    icon: IconType;
-    title: string;
-    value:string;
+  icon: IconType;
+  title: string;
+  value: string;
+}
+export interface FooterSiteMap {
+  title: string;
+  sections: FooterSection[];
+}
+export interface FooterSection {
+  title: string;
+  href: string;
 }
