@@ -54,7 +54,6 @@ export default function ProductsSection() {
                                         <Button
                                             variant="shadow"
                                             color="default"
-                                            radius="lg"
                                             size="lg"
                                             className="w-fit"
                                         >

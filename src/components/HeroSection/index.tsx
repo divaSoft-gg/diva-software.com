@@ -16,9 +16,9 @@ const HeroSection = () => {
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia vero officiis explicabo accusamus eius impedit soluta doloremque mollitia veniam officia, quam unde omnis, ipsum incidunt dolorum sint sapiente minima perferendis at fuga dolor natus! Aperiam molestiae ut ipsa nisi praesentium.
                     </p>
 
-                    <Button variant="flat" color="warning" radius="lg" size="lg" className="w-fit">Contact Us</Button>
+                    <Button variant="shadow" color="default" size="lg" className="w-fit">Contact Us</Button>
                 </div>
-                <Image src="images/hero-section/placeholder.jpg" width={400} />
+                <Image src="images/hero-section/project_roadmap.png" className="w-40 grayscale" />
             </section>
         </CentredLayout>
     )

@@ -101,7 +101,7 @@ export default function ContactUs() {
                             rows={20}
                             required
                         />
-                        <Button color="default" size="lg" className="text-white bg-black dark:bg-white dark:text-black" type="submit">Envoyer</Button>
+                        <Button color="default" size="lg" className="w-full" variant="shadow" type="submit">Envoyer</Button>
                     </div>
                 </form>
 
