@@ -40,7 +40,7 @@ export default function ContactUs() {
                         <div>
                             <h1 className="text-4xl font-bold leading-normal text-left text-white">{HOME_PAGE_COPY.contactUs.title}</h1>
 
-                            <p className="text-lg leading-8 text-left text-wrap muted">{HOME_PAGE_COPY.contactUs.subTitle}</p>
+                            <p className="text-lg leading-8 text-left text-white text-wrap muted">{HOME_PAGE_COPY.contactUs.subTitle}</p>
                         </div>
                         <ul className="flex flex-col w-full gap-8 list-none ">
                             {CONTACT_US_METHODS.map((element: IContactUsMethods, index: number) => (
@@ -101,7 +101,7 @@ export default function ContactUs() {
                             rows={20}
                             required
                         />
-                        <Button color="default" size="lg" className="text-black bg-white light:text-white light:bg-black" type="submit">Envoyer</Button>
+                        <Button color="default" size="lg" className="text-white bg-black dark:bg-white dark:text-black" type="submit">Envoyer</Button>
                     </div>
                 </form>
 

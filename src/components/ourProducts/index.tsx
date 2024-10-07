@@ -46,11 +46,11 @@ export default function ProductsSection() {
                                                     width={40}
                                                     alt="logo"
                                                 />
-                                                <h6 className="text-xl font-semibold tracking-tight text-gray-300">{element.name}</h6>
+                                                <h6 className="text-xl font-semibold tracking-tight">{element.name}</h6>
                                             </div>
                                             <h3 className="text-3xl font-semibold tracking-tight text-left">{element.slug}</h3>
                                         </div>
-                                        <p className="text-xl font-light text-left text-gray-300">{element.description}</p>
+                                        <p className="text-xl font-light text-left ">{element.description}</p>
                                         <Button
                                             variant="shadow"
                                             color="default"

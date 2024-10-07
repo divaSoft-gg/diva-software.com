@@ -8,7 +8,7 @@ import { FooterSection, FooterSiteMap } from "../../../common/types";
 export default function Footer() {
     const currentYear = new Date().getFullYear();
     return (
-        <footer className="bg-[#161616] mt-[200px]">
+        <footer className="dark:bg-[#161616]  bg-black mt-[200px]">
             <CenteredLayout>
                 <div className="flex flex-row justify-between w-full py-12">
                     <div className="max-w-[500px]">
@@ -49,7 +49,7 @@ export default function Footer() {
 
             <Divider />
 
-            <p className="w-full py-4 text-center"> &copy; {currentYear} Diva Software. All right reserved </p>
+            <p className="w-full py-4 text-center text-white"> &copy; {currentYear} Diva Software. All right reserved </p>
         </footer>
     )
 }
