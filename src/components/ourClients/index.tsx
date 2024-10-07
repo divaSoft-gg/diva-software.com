@@ -6,7 +6,7 @@ import CenteredLayout from "../ui/centredLayout"
 export default function OurClients() {
 
     return (
-        <div className="bg-[#161616]">
+        <div className="bg-[#161616]" id="our-clients">
             <CenteredLayout>
                 <div className="py-8 my-[200px]">
 

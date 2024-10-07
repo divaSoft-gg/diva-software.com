@@ -7,7 +7,7 @@ const HeroSection = () => {
 
     return (
         <CentredLayout>
-            <section className="flex flex-row justify-between gap-8 my-16 dark">
+            <section id="hero-section" className="flex flex-row justify-between gap-8 my-16 dark">
                 <div className="flex flex-col gap-8">
                     <h1 className="max-w-2xl mb-4 text-6xl font-semibold tracking-tight text-left text-black dark:text-white">
                         Design. Develop. Deliver.

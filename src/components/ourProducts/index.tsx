@@ -22,7 +22,7 @@ export default function ProductsSection() {
     };
 
     return (
-        <section className="my-[20vh]">
+        <section className="mt-[15vh]" id="products-section">
             <CenteredLayout>
 
                 <h1 className="text-6xl font-semibold text-left mb-60 leading-normaltext-white">Our Products</h1>
