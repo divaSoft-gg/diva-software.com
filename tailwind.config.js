@@ -8,6 +8,7 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"
 
+
   ],
   theme: {
     extend: {},
@@ -15,11 +16,12 @@ export default {
   darkMode: "class",
   plugins: [
     require('@tailwindcss/typography'),
-    nextui({
+    nextui(
+      {
       prefix: 'ui',
-      defaultTheme: 'dark',
       addCommonColors: false,
       themes: { light: {}, dark: {} },
-    }),
+    }
+  ),
   ]
 }
