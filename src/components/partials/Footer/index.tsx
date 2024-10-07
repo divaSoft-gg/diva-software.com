@@ -49,7 +49,7 @@ export default function Footer() {
 
             <Divider />
 
-            <p className="w-full py-4 text-center"> &copy; {currentYear} UnifyUI. All right reserved </p>
+            <p className="w-full py-4 text-center"> &copy; {currentYear} Diva Software. All right reserved </p>
         </footer>
     )
 }
