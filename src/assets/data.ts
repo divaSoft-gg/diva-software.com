@@ -38,7 +38,7 @@ export const FOOTER_SITEMAP: FooterSiteMap[] = [
 
 export const PRODUCTS_SECTION_ARRAY = [
   {
-    logo: "images/products/green-genius.png",
+    logo: "images/logo/logo.png",
     name: "Green Genius",
     slug: "Carbon Footprinting",
     description:
