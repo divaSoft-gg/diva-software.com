@@ -6,26 +6,26 @@
       },
       {
         "label": "Contactez-nous",
-        "link": "#Contactez-nous"
+        "link": "#contact-us"
       }
     ],
     "heroSection": {
-      "h1": "Conception. ",
-      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. ",
-      "button": "Contactez-nous"
+      "h1": "Conception. Développer. Livrer",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia vero officiis explicabo accusamus eius impedit soluta doloremque mollitia veniam officia, quam unde omnis, ipsum incidunt dolorum sint sapiente minima perferendis at fuga dolor natus! Aperiam molestiae ut ipsa nisi praesentium.",
+      "button": "Contactez-Nous"
     },
     "ourClients": {
-      "title": "Nos clients",
+      "title": "Nos Clients",
       "description": "Plus de 140+ entreprises ont fait confiance à DIVA-Software pour se développer grâce à notre expertise en matière de conception et de technologie."
     },
     "ourProducts": {
-      "title": "Nos produits",
+      "title": "Nos Produits",
       "websites": [
         {
-          "websiteName": "Génie vert",
-          "websiteTitle": "Empreinte carbone",
-          "websiteDescription": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. ",
-          "button": "Découvrez maintenant",
+          "websiteName": "Green Genius",
+          "websiteTitle": "Empreinte Carbone",
+          "websiteDescription": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia vero officiis explicabo accusamus eius impedit soluta doloremque mollitia veniam officia, quam unde omnis, ipsum incidunt dolorum sint sapiente minima perferendis at fuga dolor natus! Aperiam molestiae ut ipsa nisi praesentium.",
+          "button": "Découvrez Maintenant",
           "imagePath": "images/logo/logo.png",
           "preview": "images/products/schrollama-images/product_demo.gif",
           "customStyles":{
@@ -36,7 +36,7 @@
         {
           "websiteName": "Diva-Tex",
           "websiteTitle": "ERP pour l'industrie textile",
-          "websiteDescription": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. ",
+          "websiteDescription": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia vero officiis explicabo accusamus eius impedit soluta doloremque mollitia veniam officia, quam unde omnis, ipsum incidunt dolorum sint sapiente minima perferendis at fuga dolor natus! Aperiam molestiae ut ipsa nisi praesentium.",
           "button": "Découvrez maintenant",
           "imagePath": "images/produits/diva-tex.png",
           "preview": "images/products/schrollama-images/product_demo_02.gif",
@@ -48,9 +48,9 @@
       ]
     },
     "contactUs": {
-      "title": "Contactez-nous",
+      "title": "Contactez Nous",
       "description": "Nous aimerions avoir de vos nouvelles. ",
-      "marker": "Nous sommes là",
+      "marker": "Nous Sommes Là",
       "socials": [
         {
           "question": "E-mail",
@@ -58,7 +58,7 @@
         },
         {
           "question": "Adresse",
-          "answer": "4054 rue. "
+          "answer": "4054 Rue. de Yasser Arafat, Sousse"
         },
         {
           "question": "Téléphone",
@@ -66,7 +66,7 @@
         }
       ],
       "form": {
-        "fullName": "Nom et prénom",
+        "fullName": "Nom et Prénom",
         "fullNamePlaceholder": "John Doe",
         "email": "E-mail",
         "emailPlaceholder": "E-mail@exemple.com",

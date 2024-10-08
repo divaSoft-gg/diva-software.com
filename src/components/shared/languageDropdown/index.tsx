@@ -7,13 +7,14 @@ import { ILanguages } from "../../../common/types";
 export default function LanguageDropdown() {
     const { i18n } = useTranslation();
     const [selectedLanguage, setSelectedLanguage] = useState<ILanguages>(languages.find((el) => el.code == i18n.language) as ILanguages)
-    console.log(selectedLanguage)
 
     return (
         <Select
+            size='sm'
             defaultSelectedKeys={[selectedLanguage?.country_code as string]}
             aria-label="Language"
-            className="max-w-xs"
+            className="w-1/6"
+            disallowEmptySelection
             startContent={<Avatar alt="Flag" className="w-6 h-6" src={selectedLanguage.image} />}
 
         >
