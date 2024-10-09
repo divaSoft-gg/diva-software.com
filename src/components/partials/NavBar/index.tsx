@@ -1,4 +1,4 @@
-import { Image, Link, Navbar, NavbarBrand, NavbarContent, NavbarItem } from "@nextui-org/react";
+import { Image, Navbar, NavbarBrand, NavbarContent, NavbarItem } from "@nextui-org/react";
 import ThemeToggler from "../../shared/ThemeSelector";
 import LanguageDropdown from "../../shared/languageDropdown";
 import { useTranslation } from "react-i18next";

@@ -11,7 +11,12 @@ export default {
 
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        customFont: ['Goia-display', 'sans-serif'], 
+
+      }
+    },
   },
   darkMode: "class",
   plugins: [

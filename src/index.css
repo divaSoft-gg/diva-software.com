@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Goia-display';
+    src: url('public/fonts/Goia/GoiaDisplay-SemiBold.otf') format('opentype'),
+         url('public/fonts/Goia/variable/GoiaDisplayVariable.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;  
+  }
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,7 +13,6 @@
 :root {
     /* VARIABLES */
     --max-content-width: 1200px;
-    --product-section-max-content-width: 500px
 }
 
 html {

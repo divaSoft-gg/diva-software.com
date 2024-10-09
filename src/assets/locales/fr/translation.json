@@ -87,19 +87,19 @@
           "sections": [
             {
               "title": "Acceuil",
-              "href": "#section-héros"
+              "href": "#hero-section"
             },
             {
               "title": "Nos clients",
-              "href": "#nos-clients"
+              "href": "#our-clients"
             },
             {
               "title": "Nos produits",
-              "href": "#section-produits"
+              "href": "#products-section"
             },
             {
               "title": "Contactez-nous",
-              "href": "#Contactez-nous"
+              "href": "#contact-us"
             }
           ]
         },

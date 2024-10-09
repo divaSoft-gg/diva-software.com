@@ -25,8 +25,7 @@ export default function ProductsSection() {
     return (
         <section className="mt-[15vh]" id="products-section">
             <CenteredLayout>
-
-                <h1 className="text-6xl font-semibold text-left mb-60 leading-normaltext-white">{t('ourProducts.title')}</h1>
+                <h1 className="text-6xl font-semibold text-left mb-60 leading-normaltext-white font-customFont">{t('ourProducts.title')}</h1>
 
                 <section className="grid grid-cols-[2fr_4fr] w-full gap-10 min-h-screen">
                     <Scrollama
@@ -47,16 +46,16 @@ export default function ProductsSection() {
                                                     width={40}
                                                     alt="logo"
                                                 />
-                                                <h6 className="text-xl font-semibold tracking-tight">{product.websiteName}</h6>
+                                                <h6 className="text-xl font-semibold tracking-tight font-customFont">{product.websiteName}</h6>
                                             </div>
-                                            <h3 className="text-3xl font-semibold tracking-tight text-left">{product.websiteTitle}</h3>
+                                            <h3 className="text-3xl font-semibold tracking-tight text-left font-customFont">{product.websiteTitle}</h3>
                                         </div>
                                         <p className="text-xl font-light text-left ">{product.websiteDescription}</p>
                                         <Button
                                             variant="shadow"
                                             color="default"
                                             size="lg"
-                                            className="w-fit"
+                                            className="w-fit font-customFont"
                                         >
                                             {product.button}
                                         </Button>
@@ -77,7 +76,7 @@ export default function ProductsSection() {
                             </div>
 
                             <Image
-                                src={`${products[(step as number)]?.preview}`}
+                                src={`${products[step]?.preview}`}
                                 width={700}
                                 className="w-full"
                             />
