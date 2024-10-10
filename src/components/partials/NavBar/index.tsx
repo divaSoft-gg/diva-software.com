@@ -1,12 +1,17 @@
-import { Image, Link, Navbar, NavbarBrand, NavbarContent, NavbarItem } from "@nextui-org/react";
-import { NAVIGATION_ARRAY } from "../../../assets/data";
-import ThemeToggler from "../../shared/TheleSelector";
+import { Image, Navbar, NavbarBrand, NavbarContent, NavbarItem } from "@nextui-org/react";
+import ThemeToggler from "../../shared/ThemeSelector";
+import LanguageDropdown from "../../shared/languageDropdown";
+import { useTranslation } from "react-i18next";
+import { NavBarItems } from "../../../common/types";
 
 
 
 export default function NavBar() {
 
-    const navItems = NAVIGATION_ARRAY;
+    const { t } = useTranslation()
+    const navItems: NavBarItems[] = t('navbar', { returnObjects: true }) as NavBarItems[];
+
+
 
     return (
         <Navbar position='sticky'>
@@ -17,15 +22,16 @@ export default function NavBar() {
 
             <NavbarContent className="hidden gap-4 sm:flex" justify="center">
                 {
-                    navItems.map((item, index) => (
+                    navItems.map((item: NavBarItems, index: number) => (
                         <NavbarItem key={index}>
-                            <Link href={item.link} color="foreground" className="font-semibold">{item.label}</Link>
+                            <a href={item.link} color="foreground" className="font-semibold">{item.label}</a>
                         </NavbarItem>
                     ))
                 }
             </NavbarContent>
 
             <ThemeToggler />
+            <LanguageDropdown />
         </Navbar>
     )
 }

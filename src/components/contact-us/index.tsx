@@ -2,14 +2,16 @@ import { Button, Input, Textarea } from "@nextui-org/react";
 import CenteredLayout from "../ui/centredLayout";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import 'leaflet/dist/leaflet.css';
-import { CONTACT_US_METHODS, HOME_PAGE_COPY } from "../../assets/data";
-import { IContactUsMethods } from "../../common/types";
 import { LatLngTuple } from "leaflet";
 import './index.css';
+import { useTranslation } from "react-i18next";
+import { Socials } from "../../common/types";
 
 
 
 export default function ContactUs() {
+    const { t } = useTranslation()
+    const socials: Socials[] = t('contactUs.socials', { returnObjects: true }) as Socials[];
 
     const LEAFLET_CENTER_MAP: LatLngTuple = [35.8355, 10.594233534131954];
 
@@ -30,7 +32,7 @@ export default function ContactUs() {
                     >
                         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
                         <Marker position={MARKER_POSITION}>
-                            <Popup>We are here!</Popup>
+                            <Popup>{t('contactUs.marker')}</Popup>
                         </Marker>
                     </MapContainer>
 
@@ -38,15 +40,15 @@ export default function ContactUs() {
 
                     <div className="absolute top-0 left-0 z-10 flex flex-col w-full h-full gap-24 p-8">
                         <div>
-                            <h1 className="text-4xl font-bold leading-normal text-left text-white">{HOME_PAGE_COPY.contactUs.title}</h1>
+                            <h1 className="text-4xl font-bold leading-normal text-left text-white ">{t('contactUs.title')}</h1>
 
-                            <p className="text-lg leading-8 text-left text-white text-wrap muted">{HOME_PAGE_COPY.contactUs.subTitle}</p>
+                            <p className="text-lg leading-8 text-left text-white text-wrap muted">{t('contactUs.description')}</p>
                         </div>
                         <ul className="flex flex-col w-full gap-8 list-none ">
-                            {CONTACT_US_METHODS.map((element: IContactUsMethods, index: number) => (
+                            {socials.map((element: Socials, index: number) => (
                                 <li key={index} className="flex flex-col gap-1 ">
-                                    <h6 className="text-xs font-semibold text-white ">{element.title}</h6>
-                                    <span className="text-sm font-normal text-white">{element.value}</span>
+                                    <h6 className="text-xs font-semibold text-white ">{element.question}</h6>
+                                    <span className="text-sm font-normal text-white ">{element.answer}</span>
                                 </li>
                             ))}
                         </ul>
@@ -66,42 +68,42 @@ export default function ContactUs() {
                     <div className="flex flex-col w-full gap-6 ">
                         <Input
                             type="text"
-                            label="Nom & Prénom"
-                            placeholder="Jhon Doe"
+                            label={t('contactUs.form.fullName')}
+                            placeholder={t('contactUs.form.fullNamePlaceholder')}
                             name="client-name"
                             required
                         />
                         <Input
                             type="email"
-                            label="Email"
-                            placeholder="5RJpJ@example.com"
+                            label={t('contactUs.form.email')}
+                            placeholder={t('contactUs.form.emailPlaceholder')}
                             name="client-email"
                             required
                         />
                         <Input
                             type="text"
-                            label="Enterprise"
-                            placeholder="MAAK CORP"
+                            label={t('contactUs.form.company')}
+                            placeholder={t('contactUs.form.companyPlaceholder')}
                             name="client-company"
                             required
                         />
                         <Input
                             type="tel"
-                            label="Téléphone"
-                            placeholder="xxx-xxx-xxxx"
+                            label={t('contactUs.form.phone')}
+                            placeholder={t('contactUs.form.phonePlaceholder')}
                             name="client-tel"
                             required
                             pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                         />
                         <Textarea
                             variant="faded"
-                            label="Description"
-                            placeholder="Votre message..."
+                            label={t('contactUs.form.description')}
+                            placeholder={t('contactUs.form.descriptionPlaceholder')}
                             name='client-message'
                             rows={20}
                             required
                         />
-                        <Button color="default" size="lg" className="w-full" variant="shadow" type="submit">Envoyer</Button>
+                        <Button color="default" size="lg" className="w-full" variant="shadow" type="submit">{t('contactUs.form.button')}</Button>
                     </div>
                 </form>
 

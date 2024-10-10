@@ -1,24 +1,26 @@
 import { Button, Image } from "@nextui-org/react";
 import CentredLayout from "../ui/centredLayout";
+import { useTranslation } from 'react-i18next';
+import { useTheme } from "../../hooks/useTheme";
 
 const HeroSection = () => {
-
-
-
+    const { t } = useTranslation();
+    const { theme } = useTheme()
     return (
         <CentredLayout>
             <section id="hero-section" className="flex flex-row justify-between gap-8 my-16 dark">
                 <div className="flex flex-col gap-8">
-                    <h1 className="max-w-2xl mb-4 text-6xl font-semibold tracking-tight text-left light:text-black">
-                        Design. Develop. Deliver.
+                    <h1 className="max-w-2xl mb-4 text-6xl tracking-tight text-left light:text-black ">
+                        {t('heroSection.h1')}
                     </h1>
                     <p className="max-w-2xl mb-6 text-lg font-light text-left light:text-gray-300 ">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia vero officiis explicabo accusamus eius impedit soluta doloremque mollitia veniam officia, quam unde omnis, ipsum incidunt dolorum sint sapiente minima perferendis at fuga dolor natus! Aperiam molestiae ut ipsa nisi praesentium.
+                        {t('heroSection.description')}
                     </p>
 
-                    <Button variant="shadow" color="default" size="lg" className="w-fit">Contact Us</Button>
+                    <Button variant="shadow" color="default" size="lg" className="w-fit "> {t('heroSection.button')}
+                    </Button>
                 </div>
-                <Image src="images/hero-section/project_roadmap.png" className="w-40 grayscale" />
+                <Image src="images/hero-section/project_roadmap.png" className={`w-40 grayscale ${theme === 'dark' ? 'invert' : ''}`} />
             </section>
         </CentredLayout>
     )
