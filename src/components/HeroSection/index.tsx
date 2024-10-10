@@ -10,14 +10,14 @@ const HeroSection = () => {
         <CentredLayout>
             <section id="hero-section" className="flex flex-row justify-between gap-8 my-16 dark">
                 <div className="flex flex-col gap-8">
-                    <h1 className="max-w-2xl mb-4 text-6xl tracking-tight text-left light:text-black font-customFont">
+                    <h1 className="max-w-2xl mb-4 text-6xl tracking-tight text-left light:text-black ">
                         {t('heroSection.h1')}
                     </h1>
-                    <p className="max-w-2xl mb-6 text-lg font-light text-left light:text-gray-300 font-customFont ">
+                    <p className="max-w-2xl mb-6 text-lg font-light text-left light:text-gray-300 ">
                         {t('heroSection.description')}
                     </p>
 
-                    <Button variant="shadow" color="default" size="lg" className="w-fit font-customFont"> {t('heroSection.button')}
+                    <Button variant="shadow" color="default" size="lg" className="w-fit "> {t('heroSection.button')}
                     </Button>
                 </div>
                 <Image src="images/hero-section/project_roadmap.png" className={`w-40 grayscale ${theme === 'dark' ? 'invert' : ''}`} />

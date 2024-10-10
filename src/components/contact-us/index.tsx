@@ -40,15 +40,15 @@ export default function ContactUs() {
 
                     <div className="absolute top-0 left-0 z-10 flex flex-col w-full h-full gap-24 p-8">
                         <div>
-                            <h1 className="text-4xl font-bold leading-normal text-left text-white font-customFont">{t('contactUs.title')}</h1>
+                            <h1 className="text-4xl font-bold leading-normal text-left text-white ">{t('contactUs.title')}</h1>
 
-                            <p className="text-lg leading-8 text-left text-white font-customFont text-wrap muted">{t('contactUs.description')}</p>
+                            <p className="text-lg leading-8 text-left text-white text-wrap muted">{t('contactUs.description')}</p>
                         </div>
                         <ul className="flex flex-col w-full gap-8 list-none ">
                             {socials.map((element: Socials, index: number) => (
                                 <li key={index} className="flex flex-col gap-1 ">
-                                    <h6 className="text-xs font-semibold text-white font-customFont ">{element.question}</h6>
-                                    <span className="text-sm font-normal text-white font-customFont">{element.answer}</span>
+                                    <h6 className="text-xs font-semibold text-white ">{element.question}</h6>
+                                    <span className="text-sm font-normal text-white ">{element.answer}</span>
                                 </li>
                             ))}
                         </ul>

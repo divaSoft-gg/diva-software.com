@@ -23,6 +23,7 @@
       "websites": [
         {
           "websiteName": "Green Genius",
+          "invert": false,
           "websiteTitle": "Empreinte Carbone",
           "websiteDescription": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia vero officiis explicabo accusamus eius impedit soluta doloremque mollitia veniam officia, quam unde omnis, ipsum incidunt dolorum sint sapiente minima perferendis at fuga dolor natus! Aperiam molestiae ut ipsa nisi praesentium.",
           "button": "Découvrez Maintenant",
@@ -36,6 +37,8 @@
         {
           "websiteName": "Diva-Tex",
           "websiteTitle": "ERP pour l'industrie textile",
+          "invert": true,
+
           "websiteDescription": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia vero officiis explicabo accusamus eius impedit soluta doloremque mollitia veniam officia, quam unde omnis, ipsum incidunt dolorum sint sapiente minima perferendis at fuga dolor natus! Aperiam molestiae ut ipsa nisi praesentium.",
           "button": "Découvrez maintenant",
           "imagePath": "images/produits/diva-tex.png",
@@ -122,5 +125,10 @@
         }
       ],
       "footerTitle": "Tous droits réservés"
-    }
+    },
+    "aboutUs": {
+      "title": "About Us", 
+      "paragraph" : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione."
+      
+  }
   }

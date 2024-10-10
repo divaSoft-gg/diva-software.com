@@ -1,10 +1,4 @@
-@font-face {
-    font-family: 'Goia-display';
-    src: url('public/fonts/Goia/GoiaDisplay-SemiBold.otf') format('opentype'),
-         url('public/fonts/Goia/variable/GoiaDisplayVariable.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;  
-  }
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

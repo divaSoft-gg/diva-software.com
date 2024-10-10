@@ -29,6 +29,7 @@ export interface Products {
   websiteDescription: string;
   websiteName: string;
   websiteTitle: string;
+  invert: boolean
   preview: string;
   customStyles: {
     bgColor: string;

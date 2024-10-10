@@ -24,6 +24,7 @@
             {
                 "websiteName": "Green Genius",
                 "websiteTitle": "Carbon Footprinting",
+                "invert": false,
                 "websiteDescription": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia vero officiis explicabo accusamus eius impedit soluta doloremque mollitia veniam officia, quam unde omnis, ipsum incidunt dolorum sint sapiente minima perferendis at fuga dolor natus! Aperiam molestiae ut ipsa nisi praesentium.",
                 "button" :"Discover Now",
                 "imagePath" :"images/logo/logo.png",
@@ -35,6 +36,7 @@
 
             },
             {
+                "invert": true,
                 "websiteName": "Diva Tex",
                 "websiteTitle": "ERP for textile industry",
                 "websiteDescription": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia vero officiis explicabo accusamus eius impedit soluta doloremque mollitia veniam officia, quam unde omnis, ipsum incidunt dolorum sint sapiente minima perferendis at fuga dolor natus! Aperiam molestiae ut ipsa nisi praesentium.",
@@ -101,5 +103,10 @@
             ]}
         ],
         "footerTitle": "All rights reserved"
+    },
+    "aboutUs": {
+        "title": "About Us", 
+        "paragraph" : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione."
+
     }
 }
