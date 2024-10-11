@@ -5,7 +5,7 @@
     },
     {
         "label": "Contact Us",
-        "link" :"#contact-us" 
+        "link" :"/about" 
     }
 
 ],
@@ -93,7 +93,7 @@
                 "title": "Home", "href" :"#hero-section" },
                 {"title": "Our Clients", "href" :"#our-clients" },
                 {"title": "Our Products", "href" :"#products-section"},
-                {"title": "Contact Us", "href" :"#contact-us"}
+                {"title": "Contact Us", "href" :"/about"}
             ]},
             {"title" :"Socials", "sections" :[
                 {"title" : "Facebook" , "href":"#" },
@@ -106,7 +106,20 @@
     },
     "aboutUs": {
         "title": "About Us", 
-        "paragraph" : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione."
+        "paragraph" : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+        "ourTeam" : "Our Team",
+        "TeamSections":  [
+            {
+                "title" : "Developers Team"
+            },
+            {
+                "title" : "Team 2 "
+            },
+            {
+                "title" : "Team 3"
+            }
+
+        ]
 
     }
 }

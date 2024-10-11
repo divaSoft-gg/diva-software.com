@@ -29,7 +29,7 @@ export interface Products {
   websiteDescription: string;
   websiteName: string;
   websiteTitle: string;
-  invert: boolean
+  invert: boolean;
   preview: string;
   customStyles: {
     bgColor: string;
@@ -52,5 +52,15 @@ export interface ILanguages {
   code: string;
   name: string;
   country_code: string;
+  image: string;
+}
+export interface ITeam {
+  title: string;
+  data: TeamInformations[];
+}
+export interface TeamInformations {
+  imagePath: string;
+  name: string;
+  jobTitle: string;
   image: string;
 }
