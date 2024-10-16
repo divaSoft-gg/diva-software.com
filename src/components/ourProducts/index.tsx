@@ -44,7 +44,7 @@ export default function ProductsSection() {
                                         <div className="flex flex-col gap-2">
                                             <div className="flex flex-row items-center gap-4">
                                                 <Image
-                                                    className={theme == 'dark' ? '' : 'invert'}
+                                                    className={theme !== 'dark' && product.invert ? 'invert' : ''}
                                                     src={product.imagePath}
                                                     width={40}
                                                     alt="logo"
