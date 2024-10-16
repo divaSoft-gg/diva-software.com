@@ -13,10 +13,10 @@ export default function OurTeam() {
 
     return (
         <CenteredLayout>
-            {teamSection.map((item: { title: string }) => (
+            <h1 className="mt-20 text-6xl font-semibold leading-normal text-left">{t('aboutUs.ourTeam')}</h1>
 
-                <section className="my-20">
-                    <h1 className="mb-20 text-6xl font-semibold leading-normal text-left">{t('aboutUs.ourTeam')}</h1>
+            {teamSection.map((item: { title: string }, index: number) => (
+                <section className="my-20" key={index}>
                     <h2 className="text-2xl font-bold text-gray-900">{item.title}</h2>
                     <div className="flex items-center justify-center space-x-10 space-y-20">
                         {OUR_TEAM.map((element: ITeam, index: number) => (

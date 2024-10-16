@@ -12,7 +12,7 @@ export default function IntroductionSection() {
     return (
         <CenteredLayout>
             <SectionsTitle title={t('aboutUs.title')} />
-            <p className="mt-4 text-xl text-center ">
+            <p className="mt-4 text-xl text-left ">
                 {t('aboutUs.paragraph')}
             </p>
         </CenteredLayout>
