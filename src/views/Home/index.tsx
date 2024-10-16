@@ -9,7 +9,6 @@ export default function Home() {
             <HeroSection />
             <OurClients />
             <ProductsSection />
-            <ContactUs />
         </>
     )
 }

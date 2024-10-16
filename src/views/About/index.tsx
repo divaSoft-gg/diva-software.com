@@ -1,12 +1,19 @@
-import { Helmet } from "react-helmet-async";
+
+import ContactUs from "../../components/contact-us";
+import IntroductionSection from "../../components/introductionSection";
+import OurTeam from "../../components/ourTeam";
 
 export default function About() {
+
+
+
     return (
         <>
-            <Helmet>
-                <title>à propos de nous</title>
-            </Helmet>
-            <p>About works!</p>
+            <IntroductionSection />
+            <OurTeam />
+            <ContactUs />
         </>
+
     )
+
 }

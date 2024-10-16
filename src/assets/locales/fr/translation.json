@@ -6,7 +6,7 @@
       },
       {
         "label": "Contactez-nous",
-        "link": "#contact-us"
+        "link": "about"
       }
     ],
     "heroSection": {
@@ -102,7 +102,7 @@
             },
             {
               "title": "Contactez-nous",
-              "href": "#contact-us"
+              "href": "about"
             }
           ]
         },
@@ -127,8 +127,22 @@
       "footerTitle": "Tous droits réservés"
     },
     "aboutUs": {
-      "title": "About Us", 
-      "paragraph" : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione."
+      "title": "À Propos De Nous", 
+      "paragraph" : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+      "ourTeam" : "Notre équipe",
+      "TeamSections":  [
+        {
+            "title" : "Equipe Developpeurs"
+        },
+        {
+            "title" : "Equipe 2"
+        },
+        {
+            "title" : "Equipe 3"
+        }
+
+    ]
+
       
   }
   }
