@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
 import CenteredLayout from "../ui/centredLayout";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import TeamCard from "../teamMemberCard";
 import { OUR_TEAM } from "../../assets/data";
 import { ITeam, TeamInformations } from "../../common/types";
