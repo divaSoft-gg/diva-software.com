@@ -12,7 +12,7 @@ export default function ProductsSectionMobile() {
 
 
     return (
-        <section className="px-4 lg:px-0" id="products-section">
+        <section className="px-8 lg:px-0" id="products-section">
             <CenteredLayout>
                 <h1 className="mb-10 text-4xl font-semibold text-left lg:text-6xl lg:mb-60 leading-normaltext-white ">{t('ourProducts.title')}</h1>
 

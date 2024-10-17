@@ -62,7 +62,7 @@ export default function ContactUs() {
                     method="POST"
                     data-netlify="true"
                     netlify-honeypot="bot-field"
-                    className="w-full px-4 lg:px-0"
+                    className="w-full px-8 lg:px-0"
                 >
                     <input type="hidden" name="form-name" value="diva-software-submissions" />
                     <div className="flex flex-col w-full gap-6 ">

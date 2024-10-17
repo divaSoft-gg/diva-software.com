@@ -11,7 +11,7 @@ export default function IntroductionSection() {
 
     return (
         <CenteredLayout>
-            <section className="px-4 pt-10">
+            <section className="px-8 pt-10">
 
                 <SectionsTitle title={t('aboutUs.title')} />
                 <p className="px-4 mt-4 text-xl text-justify lg:px-0 ">

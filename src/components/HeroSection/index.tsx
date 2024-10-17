@@ -17,14 +17,12 @@ const HeroSection = () => {
     return (
         <CentredLayout>
             <section id="hero-section" className="flex flex-row justify-between gap-8 my-16 dark">
-                <div className="flex flex-col gap-8 md:justify-center">
-                    <div className="w-1/2 mx-auto lg:w-full">
-                        <h1 className="max-w-2xl mb-4 text-6xl tracking-tight text-left light:text-black">
-                            {t('heroSection.h1')}
-                        </h1>
-                    </div>
+                <div className="flex flex-col gap-8 ">
+                    <h1 className="max-w-2xl px-8 mb-4 text-6xl tracking-tight text-left lg-px-0 light:text-black">
+                        {t('heroSection.h1')}
+                    </h1>
 
-                    <p className="max-w-2xl px-4 mb-6 text-lg font-light text-justify lg:text-left lg:px-0 light:text-gray-300 ">
+                    <p className="max-w-2xl px-8 mb-6 text-lg font-light text-justify lg:text-left lg:px-0 light:text-gray-300 ">
                         {t('heroSection.description')}
                     </p>
 

@@ -12,7 +12,7 @@ export default function Footer() {
     const footerSiteMap: FooterItems[] = t('footer.siteMap', { returnObjects: true }) as FooterItems[];
 
     return (
-        <footer className="dark:bg-[#161616] px-4  bg-black mt-20 lg:mt-[200px]">
+        <footer className="dark:bg-[#161616] px-8  bg-black mt-20 lg:mt-[200px]">
             <CenteredLayout>
                 <div className="flex flex-col justify-between w-full py-12 lg:flex-row">
                     <div className="max-w-[500px] flex flex-col gap-4">
