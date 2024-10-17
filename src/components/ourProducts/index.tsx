@@ -86,9 +86,6 @@ export default function ProductsSection() {
                         </div>
                     </div>
                 </section>
-
-
-
             </CenteredLayout>
         </section>
 

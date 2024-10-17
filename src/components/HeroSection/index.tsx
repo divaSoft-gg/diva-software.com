@@ -10,15 +10,14 @@ const HeroSection = () => {
 
     const handleScroll = () => {
         const contactUsSection = document.getElementById('contact-us');
-        if (contactUsSection) {
-            contactUsSection.scrollIntoView({ behavior: 'smooth' });
-        }
+        if (contactUsSection) contactUsSection.scrollIntoView({ behavior: 'smooth' });
     };
+
     return (
         <CentredLayout>
             <section id="hero-section" className="flex flex-row justify-between gap-8 my-16 dark">
                 <div className="flex flex-col gap-8 ">
-                    <h1 className="max-w-2xl px-8 mb-4 text-6xl tracking-tight text-left lg-px-0 light:text-black">
+                    <h1 className="max-w-2xl px-8 mb-4 text-6xl tracking-tight text-left lg:px-0 light:text-black">
                         {t('heroSection.h1')}
                     </h1>
 
@@ -26,12 +25,12 @@ const HeroSection = () => {
                         {t('heroSection.description')}
                     </p>
 
-                    <div className="flex justify-center">
+                    <div className="flex justify-center lg:justify-start">
 
                         <Button variant="shadow" color="default" size="lg" className="w-fit" as={Link}
-
                             onClick={() => { handleScroll() }}
-                        > {t('heroSection.button')}
+                        >
+                            {t('heroSection.button')}
                         </Button>
                     </div>
                 </div>

@@ -16,11 +16,12 @@ export default function OurClients() {
                     <p className="mt-2 leading-8 text-white lg:text-lg text-md muted ">{t('ourClients.description')}</p>
                     <div className="flex flex-wrap justify-center gap-4 mt-12 dark ">
                         {
-                            OUR_CLIENTS.map((logo: IClient, index: number) =>
-                                <div className="fill-black sm:p-5 group " key={index}>
-                                    <Image src={logo.logo} width={100} height={60} alt={logo.name} className="w-auto duration-200 ease-linear opacity-50 h-7 sm:h-10 group-hover:opacity-100 group-hover:scale-105"
-                                    />
-                                </div>
+                            OUR_CLIENTS.map(
+                                (logo: IClient, index: number) =>
+                                    <div className="fill-black sm:p-5 group " key={index}>
+                                        <Image src={logo.logo} width={100} height={60} alt={logo.name} className="w-auto duration-200 ease-linear opacity-50 h-7 sm:h-10 group-hover:opacity-100 group-hover:scale-105"
+                                        />
+                                    </div>
                             )
                         }
                     </div>

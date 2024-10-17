@@ -5,7 +5,7 @@ export default function TeamCard({ imagePath, name, jobTitle }: { imagePath: str
     const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
 
     return (
-        <div className="relative m-6 overflow-hidden group">
+        <div className="relative overflow-hidden group">
             {/* Overlay */}
             <div className="absolute inset-0 w-full h-full bg-black rounded-xl opacity-0 transform translate-y-[-100%] transition-all duration-400 group-hover:translate-y-0 group-hover:opacity-50"></div>
 

@@ -12,15 +12,7 @@ export default function Home() {
         <>
             <HeroSection />
             <OurClients />
-            {isMobile ?
-                (
-                    <ProductsSectionMobile />
-
-                ) :
-                (
-                    <ProductsSection />
-                )
-            }
+            {isMobile ? <ProductsSectionMobile /> : <ProductsSection />}
             <ContactUs />
         </>
     )

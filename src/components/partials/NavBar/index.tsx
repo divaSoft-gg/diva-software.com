@@ -14,9 +14,6 @@ export default function NavBar() {
     const navItems: NavBarItems[] = t('navbar', { returnObjects: true }) as NavBarItems[];
     const [isMenuOpen, setIsMenuOpen] = React.useReducer((current) => !current, false);
 
-
-
-
     return (
         <Navbar onMenuOpenChange={setIsMenuOpen} isMenuOpen={isMenuOpen} position='sticky'>
             <NavbarContent>
@@ -38,8 +35,6 @@ export default function NavBar() {
                         </NavbarItem>
                     ))
                 }
-
-
             </NavbarContent>
             <NavbarMenu>
                 {navItems.map((item, index) => (
