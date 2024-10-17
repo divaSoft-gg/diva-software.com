@@ -13,7 +13,7 @@ export default function LanguageDropdown() {
             size='sm'
             defaultSelectedKeys={[selectedLanguage?.country_code as string]}
             aria-label="Language"
-            className="w-1/6"
+            className="w-1/3 lg:w-1/6"
             disallowEmptySelection
             startContent={<Avatar alt="Flag" className="w-6 h-6" src={selectedLanguage.image} />}
 

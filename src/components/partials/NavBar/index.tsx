@@ -1,8 +1,10 @@
-import { Image, Navbar, NavbarBrand, NavbarContent, NavbarItem } from "@nextui-org/react";
+import { Image, Link, Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenu, NavbarMenuItem, NavbarMenuToggle } from "@nextui-org/react";
 import ThemeToggler from "../../shared/ThemeSelector";
 import LanguageDropdown from "../../shared/languageDropdown";
 import { useTranslation } from "react-i18next";
 import { NavBarItems } from "../../../common/types";
+import React from "react";
+import { scrollToTop } from "../../../common/utils";
 
 
 
@@ -10,11 +12,19 @@ export default function NavBar() {
 
     const { t } = useTranslation()
     const navItems: NavBarItems[] = t('navbar', { returnObjects: true }) as NavBarItems[];
+    const [isMenuOpen, setIsMenuOpen] = React.useReducer((current) => !current, false);
+
 
 
 
     return (
-        <Navbar position='sticky'>
+        <Navbar onMenuOpenChange={setIsMenuOpen} isMenuOpen={isMenuOpen} position='sticky'>
+            <NavbarContent>
+                <NavbarMenuToggle
+                    aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+                    className="sm:hidden"
+                />
+            </NavbarContent>
 
             <NavbarBrand>
                 <Image src="/images/logo/logo.png" alt="Logo" className="w-12 grayscale" />
@@ -24,11 +34,20 @@ export default function NavBar() {
                 {
                     navItems.map((item: NavBarItems, index: number) => (
                         <NavbarItem key={index}>
-                            <a href={item.link} color="foreground" className="font-semibold">{item.label}</a>
+                            <Link href={item.link} onClick={() => { scrollToTop() }} color="foreground" className="font-semibold">{item.label}</Link>
                         </NavbarItem>
                     ))
                 }
+
+
             </NavbarContent>
+            <NavbarMenu>
+                {navItems.map((item, index) => (
+                    <NavbarMenuItem key={`${index}`}>
+                        <Link color="foreground" href={item.link} onClick={() => { setIsMenuOpen() }}>{item.label}</Link>
+                    </NavbarMenuItem>
+                ))}
+            </NavbarMenu>
 
             <ThemeToggler />
             <LanguageDropdown />

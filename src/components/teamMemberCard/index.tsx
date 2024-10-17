@@ -15,7 +15,7 @@ export default function TeamCard({ imagePath, name, jobTitle }: { imagePath: str
 
             {/* Image */}
             <Image
-                alt="Card background "
+                alt="Card background"
                 width={270}
                 height={360}
                 className="object-cover w-full h-full -z-10 rounded-xl"

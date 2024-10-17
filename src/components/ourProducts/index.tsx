@@ -10,6 +10,7 @@ import { useTheme } from "../../hooks/useTheme";
 export default function ProductsSection() {
     const { t } = useTranslation()
     const products: Products[] = t('ourProducts.websites', { returnObjects: true }) as Products[];
+
     const [step, setStep] = useState<number>(0);
     const { theme } = useTheme()
 
@@ -25,10 +26,9 @@ export default function ProductsSection() {
     };
 
     return (
-        <section className="mt-[15vh]" id="products-section">
+        <section className="px-4 lg:px-0" id="products-section">
             <CenteredLayout>
-                <h1 className="text-6xl font-semibold text-left mb-60 leading-normaltext-white ">{t('ourProducts.title')}</h1>
-
+                <h1 className="mb-10 text-4xl font-semibold text-left lg:text-6xl lg:mb-60 leading-normaltext-white ">{t('ourProducts.title')}</h1>
                 <section className="grid grid-cols-[2fr_4fr] w-full gap-10 min-h-screen">
                     <Scrollama
                         offset={settings.offset}
@@ -49,9 +49,9 @@ export default function ProductsSection() {
                                                     width={40}
                                                     alt="logo"
                                                 />
-                                                <h6 className="text-xl font-semibold tracking-tight ">{product.websiteName}</h6>
+                                                <h6 className="font-semibold tracking-tight lg:text-xl ">{product.websiteName}</h6>
                                             </div>
-                                            <h3 className="text-3xl font-semibold tracking-tight text-left ">{product.websiteTitle}</h3>
+                                            <h3 className="text-xl font-semibold tracking-tight text-left lg:text-3xl ">{product.websiteTitle}</h3>
                                         </div>
                                         <p className="text-xl font-light text-left ">{product.websiteDescription}</p>
                                         <Button
@@ -70,7 +70,7 @@ export default function ProductsSection() {
                     <div className="sticky flex justify-center w-auto h-screen top-1/4">
                         <div className="relative">
                             <div
-                                className="absolute w-full h-[500px] -z-10 rounded-xl -top-8 left-0 transition-all ease-in-out duration-250"
+                                className="absolute left-0 w-full transition-all ease-in-out h-1/4 lg:h-[500px] -z-10 rounded-xl -top-8 duration-250"
                                 style={{
                                     backgroundColor: products[step].customStyles.bgColor,
                                     rotate: products[step].customStyles.rotation,
@@ -86,6 +86,9 @@ export default function ProductsSection() {
                         </div>
                     </div>
                 </section>
+
+
+
             </CenteredLayout>
         </section>
 

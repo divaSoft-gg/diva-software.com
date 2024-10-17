@@ -11,7 +11,7 @@ export default function OurClients() {
     return (
         <div className="dark:bg-[#161616] bg-black" id="our-clients">
             <CenteredLayout>
-                <div className="py-8 my-[200px]">
+                <div className="py-8 lg:px-0 px-4 lg:my-[200px] my-20">
 
                     <SectionsTitle title={t('ourClients.title')} subtitle={t('ourClients.description')} />
                     <div className="flex flex-wrap justify-center gap-4 mt-12 dark ">
