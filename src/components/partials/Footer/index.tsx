@@ -1,4 +1,4 @@
-import { Image } from "@nextui-org/react";
+import { Image, Link } from "@nextui-org/react";
 import CenteredLayout from "../../ui/centredLayout";
 import { Divider } from "@nextui-org/divider";
 import { FooterItems, FooterSectionItems } from "../../../common/types";
@@ -12,9 +12,9 @@ export default function Footer() {
     const footerSiteMap: FooterItems[] = t('footer.siteMap', { returnObjects: true }) as FooterItems[];
 
     return (
-        <footer className="dark:bg-[#161616]  bg-black mt-[200px]">
+        <footer className="dark:bg-[#161616] px-8  bg-black mt-20 lg:mt-[200px]">
             <CenteredLayout>
-                <div className="flex flex-row justify-between w-full py-12">
+                <div className="flex flex-col justify-between w-full py-12 lg:flex-row">
                     <div className="max-w-[500px] flex flex-col gap-4">
                         <Image
                             src="images/logo/logo.png"
@@ -27,7 +27,7 @@ export default function Footer() {
                         <ThemeToggler />
                     </div>
 
-                    <div className="flex flex-row gap-8">
+                    <div className="flex flex-row justify-around gap-8 pt-10 lg:pt-0">
                         {
                             footerSiteMap.map(
                                 (element: FooterItems, index: number) => (
@@ -39,7 +39,7 @@ export default function Footer() {
                                                 element.sections.map(
                                                     (item: FooterSectionItems, index: number) => (
                                                         <li key={index}>
-                                                            <a href={item.href} className='text-gray-300 hover:text-gray-100'>{item.title}</a>
+                                                            <Link href={item.href} className='text-gray-300 hover:text-gray-100'>{item.title}</Link>
                                                         </li>
                                                     )
                                                 )

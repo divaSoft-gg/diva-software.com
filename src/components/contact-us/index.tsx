@@ -19,10 +19,10 @@ export default function ContactUs() {
 
     return (
         <CenteredLayout>
-            <div id="contact-us" className="w-full h-[500px] mt-10 relative flex flex-row gap-12">
+            <div id="contact-us" className="w-full lg:h-[500px] h-full mt-10 pt-10   flex lg:flex-row flex-col gap-12">
 
                 {/* Left: Map */}
-                <div className="relative min-w-[500px] h-full">
+                <div className="relative min-w-full lg:min-w-[500px] h-[500px]">
 
                     <MapContainer
                         center={LEAFLET_CENTER_MAP}
@@ -62,7 +62,7 @@ export default function ContactUs() {
                     method="POST"
                     data-netlify="true"
                     netlify-honeypot="bot-field"
-                    className="w-full"
+                    className="w-full px-8 lg:px-0"
                 >
                     <input type="hidden" name="form-name" value="diva-software-submissions" />
                     <div className="flex flex-col w-full gap-6 ">

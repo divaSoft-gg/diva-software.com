@@ -13,22 +13,26 @@ export default function OurTeam() {
 
     return (
         <CenteredLayout>
-            {teamSection.map((item: { title: string }) => (
+            <h1 className="px-8 mt-20 text-4xl font-semibold leading-normal text-left lg:text-6xl lg:px-0">{t('aboutUs.ourTeam')}</h1>
 
-                <section className="my-20">
-                    <h1 className="mb-20 text-6xl font-semibold leading-normal text-left">{t('aboutUs.ourTeam')}</h1>
-                    <h2 className="text-2xl font-bold text-gray-900">{item.title}</h2>
-                    <div className="flex items-center justify-center space-x-10 space-y-20">
-                        {OUR_TEAM.map((element: ITeam, index: number) => (
-                            <div key={index} className="grid flex-shrink-0 grid-cols-1 gap-y-8">
-                                {element.data.map((member: TeamInformations, index: number) => (
-                                    <TeamCard key={index} {...member} />
-                                ))}
-                            </div>
-                        ))}
-                    </div>
-                </section>
-            ))}
+            {
+                teamSection.map((item: { title: string }, index: number) => (
+                    <section className="my-20" key={index}>
+                        <h2 className="px-8 mb-4 text-xl font-bold text-black lg:px-0 dark:text-white lg:text-2xl">{item.title}</h2>
+
+                        <div className="grid gap-4 responsiveGrid">
+                            {
+                                OUR_TEAM.map((element: ITeam) => (
+                                    element.data.map(
+                                        (member: TeamInformations, elementIndex: number) => <TeamCard key={elementIndex} {...member} />
+                                    )
+                                ))
+                            }
+                        </div>
+
+                    </section>
+                ))
+            }
 
         </CenteredLayout>
     );
