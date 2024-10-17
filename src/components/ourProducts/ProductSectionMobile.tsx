@@ -37,12 +37,12 @@ export default function ProductsSectionMobile() {
                                     variant="shadow"
                                     color="default"
                                     size="md"
-                                    className="self-center w-fit"
+                                    className="self-start w-fit"
                                 >
                                     {product.button}
                                 </Button>
 
-                                <div className="relative">
+                                <div className="relative my-10">
                                     <div
                                         className="absolute w-full h-full transition-all ease-in-out -z-10 rounded-xl duration-250"
                                         style={{
@@ -55,7 +55,7 @@ export default function ProductsSectionMobile() {
                                     <Image
                                         src={`${product?.preview}`}
                                         width={700}
-                                        className="w-full"
+                                        className="w-full "
                                     />
                                 </div>
 

@@ -1,7 +1,6 @@
 import { Image } from "@nextui-org/react"
 import { OUR_CLIENTS } from "../../assets/data"
 import { IClient } from "../../common/types"
-import SectionsTitle from "../shared/sectionTitle"
 import CenteredLayout from "../ui/centredLayout"
 import { useTranslation } from "react-i18next"
 
@@ -13,7 +12,8 @@ export default function OurClients() {
             <CenteredLayout>
                 <div className="py-8 lg:px-0 px-4 lg:my-[200px] my-20">
 
-                    <SectionsTitle title={t('ourClients.title')} subtitle={t('ourClients.description')} />
+                    <h1 className="pb-3 text-4xl font-semibold leading-normal text-left text-white lg:text-6xl">{t('ourClients.title')}</h1>
+                    <p className="mt-2 leading-8 text-white lg:text-lg text-md muted ">{t('ourClients.description')}</p>
                     <div className="flex flex-wrap justify-center gap-4 mt-12 dark ">
                         {
                             OUR_CLIENTS.map((logo: IClient, index: number) =>

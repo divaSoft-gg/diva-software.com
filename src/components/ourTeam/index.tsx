@@ -18,9 +18,9 @@ export default function OurTeam() {
             {teamSection.map((item: { title: string }, index: number) => (
                 <section className="my-20" key={index}>
                     <h2 className="px-4 text-xl font-bold text-gray-900 lg:text-2xl">{item.title}</h2>
-                    <div className="flex items-center justify-center space-x-10 space-y-20">
+                    <div className="flex flex-wrap items-center justify-center space-y-10 lg:space-y-0 lg:space-x-10">
                         {OUR_TEAM.map((element: ITeam, index: number) => (
-                            <div key={index} className="grid flex-shrink-0 grid-cols-1 gap-y-8">
+                            <div key={index} className="flex-shrink-0">
                                 {element.data.map((member: TeamInformations, index: number) => (
                                     <TeamCard key={index} {...member} />
                                 ))}

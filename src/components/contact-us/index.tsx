@@ -19,7 +19,7 @@ export default function ContactUs() {
 
     return (
         <CenteredLayout>
-            <div id="contact-us" className="w-full lg:h-[500px] h-full mt-10   flex lg:flex-row flex-col gap-12">
+            <div id="contact-us" className="w-full lg:h-[500px] h-full mt-10 pt-10   flex lg:flex-row flex-col gap-12">
 
                 {/* Left: Map */}
                 <div className="relative min-w-full lg:min-w-[500px] h-[500px]">

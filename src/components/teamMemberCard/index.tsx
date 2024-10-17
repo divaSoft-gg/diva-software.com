@@ -1,8 +1,10 @@
 import { Image } from "@nextui-org/react";
+import { useMediaQuery } from "react-responsive";
 
 export default function TeamCard({ imagePath, name, jobTitle }: { imagePath: string, name: string, jobTitle: string }) {
-    return (
+    const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
 
+    return (
         <div className="relative m-6 overflow-hidden group">
             {/* Overlay */}
             <div className="absolute inset-0 w-full h-full bg-black rounded-xl opacity-0 transform translate-y-[-100%] transition-all duration-400 group-hover:translate-y-0 group-hover:opacity-50"></div>
@@ -16,12 +18,11 @@ export default function TeamCard({ imagePath, name, jobTitle }: { imagePath: str
             {/* Image */}
             <Image
                 alt="Card background"
-                width={270}
-                height={360}
+                width={isMobile ? 180 : 270}
+                height={isMobile ? 240 : 360}
                 className="object-cover w-full h-full -z-10 rounded-xl"
                 src={imagePath}
             />
         </div>
-
     );
 };
