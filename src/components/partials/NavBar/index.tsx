@@ -34,16 +34,19 @@ export default function NavBar() {
                     ))
                 }
             </NavbarContent>
-            <NavbarMenu>
-                {navItems.map((item, index) => (
-                    <NavbarMenuItem key={`${index}`}>
-                        <Link color="foreground" href={item.link} onClick={() => { setIsMenuOpen() }}>{item.label}</Link>
-                    </NavbarMenuItem>
-                ))}
-            </NavbarMenu>
+            <NavbarContent>
+
+                <NavbarMenu className="flex items-start justify-start pt-20 ">
+                    {navItems.map((item, index) => (
+                        <NavbarMenuItem key={`${index}`} >
+                            <Link color="foreground" href={item.link} onClick={() => { setIsMenuOpen() }}>{item.label}</Link>
+                        </NavbarMenuItem>
+                    ))}
+                </NavbarMenu>
+            </NavbarContent>
 
             <ThemeToggler />
             <LanguageDropdown />
-        </Navbar>
+        </Navbar >
     )
 }
