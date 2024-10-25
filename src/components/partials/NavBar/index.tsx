@@ -16,12 +16,7 @@ export default function NavBar() {
 
     return (
         <Navbar onMenuOpenChange={setIsMenuOpen} isMenuOpen={isMenuOpen} position='sticky'>
-            <NavbarContent>
-                <NavbarMenuToggle
-                    aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-                    className="sm:hidden"
-                />
-            </NavbarContent>
+
 
 
 
@@ -34,16 +29,10 @@ export default function NavBar() {
                     ))
                 }
             </NavbarContent>
-            <NavbarContent>
 
-                <NavbarMenu className="flex items-start justify-start pt-20 ">
-                    {navItems.map((item, index) => (
-                        <NavbarMenuItem key={`${index}`} >
-                            <Link color="foreground" href={item.link} onClick={() => { setIsMenuOpen() }}>{item.label}</Link>
-                        </NavbarMenuItem>
-                    ))}
-                </NavbarMenu>
-            </NavbarContent>
+            {navItems.map((item) => (
+                <Link color="foreground" href={item.link} onClick={() => { setIsMenuOpen() }}>{item.label}</Link>
+            ))}
 
             <ThemeToggler />
             <LanguageDropdown />
