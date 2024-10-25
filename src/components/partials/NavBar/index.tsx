@@ -20,7 +20,7 @@ export default function NavBar() {
 
 
 
-            <NavbarContent className="hidden gap-4 sm:flex" justify="center">
+            <NavbarContent className="gap-4 sm:flex" justify="center">
                 {
                     navItems.map((item: NavBarItems, index: number) => (
                         <NavbarItem key={index}>
@@ -30,9 +30,7 @@ export default function NavBar() {
                 }
             </NavbarContent>
 
-            {navItems.map((item) => (
-                <Link color="foreground" href={item.link} onClick={() => { setIsMenuOpen() }}>{item.label}</Link>
-            ))}
+
 
             <ThemeToggler />
             <LanguageDropdown />
