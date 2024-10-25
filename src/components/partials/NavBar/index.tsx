@@ -23,9 +23,7 @@ export default function NavBar() {
                 />
             </NavbarContent>
 
-            <NavbarBrand>
-                <Image src="/images/logo/logo.png" alt="Logo" className="w-12 grayscale" />
-            </NavbarBrand>
+
 
             <NavbarContent className="hidden gap-4 sm:flex" justify="center">
                 {

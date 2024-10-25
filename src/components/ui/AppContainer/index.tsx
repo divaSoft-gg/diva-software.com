@@ -20,6 +20,7 @@ export function AppContainer({ className = '' }) {
 
             <div className={cn('w-full h-full', className)}>
                 <DivaGeneralNavbar />
+                <NavBar />
                 <React.Suspense
                     fallback={
                         <div className="flex items-center justify-center w-full h-full">

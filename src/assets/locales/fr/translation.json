@@ -1,9 +1,6 @@
 {
     "navbar": [
-      {
-        "label": "Acceuil",
-        "link": "/"
-      },
+   
       {
         "label": "Notre Equipe",
         "link": "about"

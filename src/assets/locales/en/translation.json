@@ -1,8 +1,5 @@
 {
-    "navbar": [{
-        "label": "Home",
-        "link" :"/" 
-    },
+    "navbar": [
     {
         "label": "Our Team",
         "link" :"/about" 
