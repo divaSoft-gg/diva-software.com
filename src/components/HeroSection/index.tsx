@@ -34,7 +34,8 @@ const HeroSection = () => {
                         </Button>
                     </div>
                 </div>
-                <Image src="images/hero-section/project_roadmap.png" className={` -z-10 hidden lg:block grayscale w-72 ${theme === 'dark' ? 'invert' : ''}`} />
+                <Image
+                    src="images/hero-section/project_roadmap.png" className={`!-z-10 relative pointer-events-none hidden lg:block grayscale w-72 ${theme === 'dark' ? 'invert' : ''}`} />
             </section>
         </CentredLayout>
     )

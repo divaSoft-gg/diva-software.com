@@ -11,10 +11,7 @@ export default function NavBar() {
     const { t } = useTranslation()
     const navItems: NavItemsProps[] = t('navbar', { returnObjects: true }) as NavItemsProps[];
     return (
-
-
         isMobile ? <MobileNavbar navItems={navItems} /> : <DesktopNavBar navItems={navItems} />
-
     )
 
 }
