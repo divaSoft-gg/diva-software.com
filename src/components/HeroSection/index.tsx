@@ -15,13 +15,13 @@ const HeroSection = () => {
 
     return (
         <CentredLayout>
-            <section id="hero-section" className="flex flex-row justify-between gap-8 my-16 dark">
+            <section id="hero-section" className="flex flex-row justify-between w-full gap-8 px-4 my-16 dark lg:p-0">
                 <div className="flex flex-col gap-8 ">
-                    <h1 className="max-w-2xl px-8 mb-4 text-6xl tracking-tight text-left lg:px-0 light:text-black">
+                    <h1 className="max-w-2xl text-6xl tracking-tight text-left lg:px-0 light:text-black">
                         {t('heroSection.h1')}
                     </h1>
 
-                    <p className="max-w-2xl px-8 mb-6 text-lg font-light text-justify lg:text-left lg:px-0 light:text-gray-300 ">
+                    <p className="max-w-2xl text-lg font-light text-justify lg:text-left lg:px-0 light:text-gray-300">
                         {t('heroSection.description')}
                     </p>
 
@@ -34,7 +34,7 @@ const HeroSection = () => {
                         </Button>
                     </div>
                 </div>
-                <Image src="images/hero-section/project_roadmap.png" className={`hidden lg:block w-40 grayscale ${theme === 'dark' ? 'invert' : ''}`} />
+                <Image src="images/hero-section/project_roadmap.png" className={`hidden lg:block grayscale w-72 ${theme === 'dark' ? 'invert' : ''}`} />
             </section>
         </CentredLayout>
     )
