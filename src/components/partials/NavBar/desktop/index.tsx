@@ -52,7 +52,7 @@ function NestedLink({ index, element }: Readonly<{ index: number; element: NavIt
 // Main Navbar Componenet 
 export default function DesktopNavBar({ navItems }: Readonly<{ navItems: NavItemsProps[] }>) {
     return (
-        <div className='sticky top-0 w-full bg-white border-gray-200'>
+        <div className='sticky top-0 z-50 w-full bg-white border-gray-200'>
             <nav className='flex flex-row items-center justify-between max-w-[var(--max-content-width)] mx-auto'>
                 <a href='https://diva.diva-dev.tn' className='flex items-center gap-3'>
                     <img src='https://ik.imagekit.io/divadev/DIVA/logo.png' alt='Website Logo' width={40} />
