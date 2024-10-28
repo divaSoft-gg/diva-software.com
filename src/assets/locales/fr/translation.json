@@ -1,148 +1,167 @@
 {
-    "navbar": [
-      {
-        "label": "Acceuil",
-        "link": "/"
-      },
-      {
-        "label": "Notre Equipe",
-        "link": "about"
-      }
-    ],
-    "heroSection": {
-      "h1": "Conception. Développer. Livrer",
-      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia vero officiis explicabo accusamus eius impedit soluta doloremque mollitia veniam officia, quam unde omnis, ipsum incidunt dolorum sint sapiente minima perferendis at fuga dolor natus! Aperiam molestiae ut ipsa nisi praesentium.",
-      "button": "Contactez-Nous"
+  "navbar": [
+    {
+      "label": "Acceuil",
+      "link": "/",
+      "hasChildren": false
     },
-    "ourClients": {
-      "title": "Nos Clients",
-      "description": "Plus de 140+ entreprises ont fait confiance à DIVA-Software pour se développer grâce à notre expertise en matière de conception et de technologie."
+    {
+      "label": "Notre Equipe",
+      "link": "about",
+      "hasChildren": false
     },
-    "ourProducts": {
-      "title": "Nos Produits",
-      "websites": [
+    {
+      "label": "Nos Solutions",
+      "hasChildren": true,
+      "children": [
         {
-          "websiteName": "Green Genius",
-          "invert": false,
+          "label": "Green Genius",
+          "link": "https://green-genius.org/",
+          "websiteLogo": "https://i.imgur.com/V7Mg70E.png",
           "websiteTitle": "Empreinte Carbone",
-          "websiteDescription": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia vero officiis explicabo accusamus eius impedit soluta doloremque mollitia veniam officia, quam unde omnis, ipsum incidunt dolorum sint sapiente minima perferendis at fuga dolor natus! Aperiam molestiae ut ipsa nisi praesentium.",
-          "button": "Découvrez Maintenant",
-          "imagePath": "images/logo/logo.png",
-          "preview": "images/products/schrollama-images/product_demo.gif",
-          "customStyles":{
-            "bgColor": "#83B435",
-            "rotation": "6deg"
-        }
+          "websiteDescription": "Génie Vert aide les utilisateurs à mesurer et réduire leur empreinte carbone avec des outils faciles à utiliser. Il encourage des actions durables pour un avenir plus vert."
         },
         {
-          "websiteName": "Diva-Tex",
+          "label": "Diva Tex",
+          "link": "https://divatex.eu/",
+          "websiteLogo": "https://i.imgur.com/iqq372D.png",
           "websiteTitle": "ERP pour l'industrie textile",
-          "invert": true,
-
-          "websiteDescription": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia vero officiis explicabo accusamus eius impedit soluta doloremque mollitia veniam officia, quam unde omnis, ipsum incidunt dolorum sint sapiente minima perferendis at fuga dolor natus! Aperiam molestiae ut ipsa nisi praesentium.",
-          "button": "Découvrez maintenant",
-          "imagePath": "images/produits/diva-tex.png",
-          "preview": "images/products/schrollama-images/product_demo_02.gif",
-          "customStyles":{
-              "bgColor": "#1869DA",
-              "rotation": "-6deg"
-          }
+          "websiteDescription": "Diva Tex est une solution ERP pour l'industrie textile, optimisant les processus et améliorant l'efficacité. Elle simplifie les opérations pour une meilleure gestion des flux de travail."
         }
       ]
-    },
-    "contactUs": {
-      "title": "Contactez Nous",
-      "description": "Nous aimerions avoir de vos nouvelles. ",
-      "marker": "Nous Sommes Là",
-      "socials": [
-        {
-          "question": "E-mail",
-          "answer": "exemple@exemple.com"
-        },
-        {
-          "question": "Adresse",
-          "answer": "4054 Rue. de Yasser Arafat, Sousse"
-        },
-        {
-          "question": "Téléphone",
-          "answer": "(+216) 53 333 850"
+    }
+  ],
+  "heroSection": {
+    "h1": "Conception. Développer. Livrer",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia vero officiis explicabo accusamus eius impedit soluta doloremque mollitia veniam officia, quam unde omnis, ipsum incidunt dolorum sint sapiente minima perferendis at fuga dolor natus! Aperiam molestiae ut ipsa nisi praesentium.",
+    "button": "Contactez-Nous"
+  },
+  "ourClients": {
+    "title": "Nos Clients",
+    "description": "Plus de 140+ entreprises ont fait confiance à DIVA-Software pour se développer grâce à notre expertise en matière de conception et de technologie."
+  },
+  "ourProducts": {
+    "title": "Nos Produits",
+    "websites": [
+      {
+        "websiteName": "Green Genius",
+        "invert": false,
+        "websiteTitle": "Empreinte Carbone",
+        "websiteDescription": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia vero officiis explicabo accusamus eius impedit soluta doloremque mollitia veniam officia, quam unde omnis, ipsum incidunt dolorum sint sapiente minima perferendis at fuga dolor natus! Aperiam molestiae ut ipsa nisi praesentium.",
+        "button": "Découvrez Maintenant",
+        "imagePath": "images/logo/logo.png",
+        "preview": "images/products/schrollama-images/product_demo.gif",
+        "customStyles": {
+          "bgColor": "#83B435",
+          "rotation": "6deg"
         }
-      ],
-      "form": {
-        "fullName": "Nom et Prénom",
-        "fullNamePlaceholder": "John Doe",
-        "email": "E-mail",
-        "emailPlaceholder": "E-mail@exemple.com",
-        "company": "Entreprise",
-        "companyPlaceholder": "MAAK Corp.",
-        "phone": "Numéro de téléphone",
-        "phonePlaceholder": "xxx_xxx_xxx",
-        "description": "Description",
-        "descriptionPlaceholder": "Votre message",
-        "button": "Envoyer"
+      },
+      {
+        "websiteName": "Diva-Tex",
+        "websiteTitle": "ERP pour l'industrie textile",
+        "invert": true,
+
+        "websiteDescription": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia vero officiis explicabo accusamus eius impedit soluta doloremque mollitia veniam officia, quam unde omnis, ipsum incidunt dolorum sint sapiente minima perferendis at fuga dolor natus! Aperiam molestiae ut ipsa nisi praesentium.",
+        "button": "Découvrez maintenant",
+        "imagePath": "images/produits/diva-tex.png",
+        "preview": "images/products/schrollama-images/product_demo_02.gif",
+        "customStyles": {
+          "bgColor": "#1869DA",
+          "rotation": "-6deg"
+        }
       }
-    },
-    "footer": {
-      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. ",
-      "siteMap": [
-        {
-          "title": "Plan du site",
-          "sections": [
-            {
-              "title": "Acceuil",
-              "href": "#hero-section"
-            },
-            {
-              "title": "Nos clients",
-              "href": "#our-clients"
-            },
-            {
-              "title": "Nos produits",
-              "href": "#products-section"
-            },
-            {
-              "title": "Contactez-nous",
-              "href": "about"
-            }
-          ]
-        },
-        {
-          "title": "Réseaux sociaux",
-          "sections": [
-            {
-              "title": "Facebook",
-              "href": "#"
-            },
-            {
-              "title": "Instagram",
-              "href": "#"
-            },
-            {
-              "title": "LinkedIn",
-              "href": "#"
-            }
-          ]
-        }
-      ],
-      "footerTitle": "Tous droits réservés"
-    },
-    "aboutUs": {
-      "title": "À Propos De Nous", 
-      "paragraph" : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
-      "ourTeam" : "Notre équipe",
-      "TeamSections":  [
-        {
-            "title" : "Equipe Developpeurs"
-        },
-        {
-            "title" : "Equipe 2"
-        },
-        {
-            "title" : "Equipe 3"
-        }
-
     ]
-
-      
+  },
+  "contactUs": {
+    "title": "Contactez Nous",
+    "description": "Nous aimerions avoir de vos nouvelles. ",
+    "marker": "Nous Sommes Là",
+    "socials": [
+      {
+        "question": "E-mail",
+        "answer": "exemple@exemple.com"
+      },
+      {
+        "question": "Adresse",
+        "answer": "4054 Rue. de Yasser Arafat, Sousse"
+      },
+      {
+        "question": "Téléphone",
+        "answer": "(+216) 53 333 850"
+      }
+    ],
+    "form": {
+      "fullName": "Nom et Prénom",
+      "fullNamePlaceholder": "John Doe",
+      "email": "E-mail",
+      "emailPlaceholder": "E-mail@exemple.com",
+      "company": "Entreprise",
+      "companyPlaceholder": "MAAK Corp.",
+      "phone": "Numéro de téléphone",
+      "phonePlaceholder": "xxx_xxx_xxx",
+      "description": "Description",
+      "descriptionPlaceholder": "Votre message",
+      "button": "Envoyer"
+    }
+  },
+  "footer": {
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. ",
+    "siteMap": [
+      {
+        "title": "Plan du site",
+        "sections": [
+          {
+            "title": "Acceuil",
+            "href": "#hero-section"
+          },
+          {
+            "title": "Nos clients",
+            "href": "#our-clients"
+          },
+          {
+            "title": "Nos produits",
+            "href": "#products-section"
+          },
+          {
+            "title": "Contactez-nous",
+            "href": "about"
+          }
+        ]
+      },
+      {
+        "title": "Réseaux sociaux",
+        "sections": [
+          {
+            "title": "Facebook",
+            "href": "#"
+          },
+          {
+            "title": "Instagram",
+            "href": "#"
+          },
+          {
+            "title": "LinkedIn",
+            "href": "#"
+          }
+        ]
+      }
+    ],
+    "footerTitle": "Tous droits réservés"
+  },
+  "aboutUs": {
+    "title": "À Propos De Nous",
+    "paragraph": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+    "ourTeam": "Notre équipe",
+    "TeamSections": [
+      {
+        "title": "Equipe Developpeurs"
+      },
+      {
+        "title": "Equipe 2"
+      },
+      {
+        "title": "Equipe 3"
+      }
+    ]
   }
-  }
+}

@@ -16,3 +16,10 @@ html {
 .responsiveGrid {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
+#megaMenu {
+    background: rgba(255, 255, 255, 0.27);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.26);
+}

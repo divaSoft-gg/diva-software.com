@@ -13,16 +13,13 @@ export default function LanguageDropdown() {
             size='sm'
             defaultSelectedKeys={[selectedLanguage?.country_code as string]}
             aria-label="Language"
-            className="w-1/3 lg:w-1/6"
+            className="w-32"
             disallowEmptySelection
             startContent={<Avatar alt="Flag" className="w-6 h-6" src={selectedLanguage.image} />}
-
         >
             {languages.map((element: ILanguages) => (
                 <SelectItem
-
                     onClick={() => { i18n.changeLanguage(element.code); setSelectedLanguage(element) }}
-
                     key={element.country_code}
                     startContent={<Avatar alt="Flag" className="w-6 h-6" src={element.image} />}
                 >

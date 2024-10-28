@@ -1,11 +1,35 @@
 {
     "navbar": [{
         "label": "Home",
-        "link" :"/" 
+        "link" :"/" ,
+        "hasChildren": false
     },
     {
         "label": "Our Team",
-        "link" :"/about" 
+        "link" :"/about" ,
+        "hasChildren": false
+    },
+    {
+        "label": "Our Solutions",
+        "hasChildren":true,
+        "children": [ 
+                   {
+            "label": "Green Genius",
+            "link": "https://green-genius.org/",
+            "websiteLogo": "https://i.imgur.com/V7Mg70E.png",
+            "websiteTitle": "Carbon Footprinting",
+            "websiteDescription":
+              "Green Genius helps users measure and reduce their carbon footprint with easy-to-use tools. It empowers sustainable actions for a greener future."
+          },
+          {
+            "label": "Diva Tex",
+            "link": "https://divatex.eu/",
+            "websiteLogo": "https://i.imgur.com/iqq372D.png",
+            "websiteTitle": "ERP for textile industry",
+            "websiteDescription":
+              "Diva Tex is an ERP solution for the textile industry, optimizing processes and improving efficiency.It streamlines operations for better workflow management."
+          }
+    ]
     }
 
 ],
