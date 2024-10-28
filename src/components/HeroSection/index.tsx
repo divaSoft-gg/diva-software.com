@@ -1,4 +1,4 @@
-import { Button, Image, Link } from "@nextui-org/react";
+import { Button, Link } from "@nextui-org/react";
 import CentredLayout from "../ui/centredLayout";
 import { useTranslation } from 'react-i18next';
 import { useTheme } from "../../hooks/useTheme";

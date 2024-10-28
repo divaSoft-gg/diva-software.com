@@ -1,4 +1,3 @@
-import React from 'react'
 import { ServicesCard } from '../../../shared/card';
 import { NavItemsProps } from '../../../../common/types';
 import ThemeToggler from '../../../shared/TheleSelector';
