@@ -2,12 +2,35 @@
     "navbar": [
       {
         "label": "Acceuil",
-        "link": "/"
+        "link": "/",
+        "hasChildren": false
       },
       {
         "label": "Notre Equipe",
-        "link": "about"
-      }
+        "link": "about",
+        "hasChildren": false
+      },
+      {"label": "Notre Solutions",
+    "hasChildren":true,
+    "children": [
+  {
+    "label": "Green Genius",
+    "link": "https://green-genius.org/",
+    "websiteLogo": "https://i.imgur.com/V7Mg70E.png",
+    "websiteTitle": "Empreinte Carbone",
+    "websiteDescription":
+      "Génie Vert aide les utilisateurs à mesurer et réduire leur empreinte carbone avec des outils faciles à utiliser. Il encourage des actions durables pour un avenir plus vert."
+  },
+  {
+    "label": "Diva Tex",
+    "link": "https://divatex.eu/",
+    "websiteLogo": "https://i.imgur.com/iqq372D.png",
+    "websiteTitle": "ERP pour l'industrie textile",
+    "websiteDescription":
+      "Diva Tex est une solution ERP pour l'industrie textile, optimisant les processus et améliorant l'efficacité. Elle simplifie les opérations pour une meilleure gestion des flux de travail."
+  }
+]
+    }
     ],
     "heroSection": {
       "h1": "Conception. Développer. Livrer",

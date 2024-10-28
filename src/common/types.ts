@@ -44,10 +44,6 @@ export interface FooterItems {
   title: string;
   sections: FooterSectionItems[];
 }
-export interface NavBarItems {
-  label: string;
-  link: string;
-}
 export interface ILanguages {
   code: string;
   name: string;
@@ -63,4 +59,20 @@ export interface TeamInformations {
   name: string;
   jobTitle: string;
   image: string;
+}
+// Interface for Children Props of nav items
+export interface ChildrenProps {
+  label: string;
+  link: string;
+  websiteLogo: string;
+  websiteTitle: string;
+  websiteDescription: string;
+}
+// Interface for  Props of nav items
+
+export interface NavItemsProps {
+  label: string;
+  link?: string;
+  hasChildren: boolean;
+  children?: ChildrenProps[];
 }
