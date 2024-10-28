@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { useTheme } from "../../hooks/useTheme";
 
 
-const HeroSection = () => {
+export default function HeroSection() {
     const { t } = useTranslation();
     const { theme } = useTheme()
 
@@ -34,13 +34,8 @@ const HeroSection = () => {
                         </Button>
                     </div>
                 </div>
-                <Image
-                    src="images/hero-section/project_roadmap.png" className={`!-z-10 relative pointer-events-none hidden lg:block grayscale w-72 ${theme === 'dark' ? 'invert' : ''}`} />
+                <img src="images/hero-section/project_roadmap.png" className={`!-z-10 pointer-events-none hidden lg:block grayscale w-72 ${theme === 'dark' ? 'invert' : ''}`} />
             </section>
         </CentredLayout>
     )
 }
-
-
-
-export default HeroSection;
