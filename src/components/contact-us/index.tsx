@@ -26,8 +26,7 @@ export default function ContactUs() {
 
                 <div className="flex flex-col w-full gap-6 py-6 ">
 
-                    <h6 className="text-5xl font-semibold text-left text-blue-600">{t('contactUs.title')}</h6>
-                    <h6 className="text-5xl font-semibold text-left text-blue-600">{t('contactUs.subTitle')}</h6>
+                    <h6 className="text-5xl font-semibold text-left text-blue-600">{t('contactUs.title')} <br />{t('contactUs.subTitle')}</h6>
                     <p className="py-6 text-left text-gray-700 text-medium w-96">{t('contactUs.description')}</p>
                     <ul className="flex flex-col w-full gap-2 list-none">
                         <li>
