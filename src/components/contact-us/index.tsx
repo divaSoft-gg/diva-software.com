@@ -2,7 +2,6 @@ import { Button, Input, Textarea } from "@nextui-org/react";
 import CenteredLayout from "../ui/centredLayout";
 import { useTranslation } from "react-i18next";
 import { Socials } from "../../common/types";
-import SectionsTitle from "../shared/sectionTitle";
 import { TFunction } from 'i18next';
 
 
@@ -17,24 +16,22 @@ export default function ContactUs() {
 
     return (
         <CenteredLayout>
-            <div className="mb-20">
-                <SectionsTitle title={t('contactUs.sectionTitle')} />
-            </div>
-
-            <div id="contact-us" className="flex flex-col w-full p-10 lg:flex-row">
 
 
-                <div className="flex flex-col w-full gap-6 py-6 ">
+            <div id="contact-us" className="flex flex-col w-full p-4 lg:flex-row lg:p-0">
 
-                    <h6 className="text-5xl font-semibold text-left text-blue-600">{t('contactUs.title')} <br />{t('contactUs.subTitle')}</h6>
-                    <p className="py-6 text-left text-gray-700 text-medium w-96">{t('contactUs.description')}</p>
-                    <ul className="flex flex-col w-full gap-2 list-none">
+
+                <div className="flex flex-col w-full gap-6 ">
+
+                    <h6 className="font-semibold text-left text-black text-7xl dark:text-white">{t('contactUs.title')} <br />{t('contactUs.subTitle')}</h6>
+                    <p className="py-6 text-left text-gray-700 text-medium w-96 dark:text-white">{t('contactUs.description')}</p>
+                    <ul className="flex flex-col w-full gap-2 pb-6 list-none lg:pb-0">
                         <li>
-                            <h6 className="text-sm font-semibold tracking-[0.2rem] text-gray-500 py-4">{t('contactUs.ReachUsTitle')}</h6>
+                            <h6 className="text-sm font-semibold tracking-[0.2rem] text-gray-500 py-4 dark:text-white">{t('contactUs.ReachUsTitle')}</h6>
                         </li>
                         {socials.map((element: Socials, index: number) => (
                             <li key={index} >
-                                <span className="text-lg font-semibold text-black">{element.answer}</span>
+                                <span className="text-lg font-semibold text-black dark:text-white">{element.answer}</span>
                             </li>
                         ))}
                     </ul>
@@ -110,8 +107,7 @@ function ContactUsForm({ t }: { t: TFunction }) {
 
 
                 <Button size="lg"
-                    className="w-fit "
-                    // className="w-full" 
+                    className="w-full"
                     variant="shadow" type="submit">{t('contactUs.form.button')}</Button>
             </div>
         </form>
