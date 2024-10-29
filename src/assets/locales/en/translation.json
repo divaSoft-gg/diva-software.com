@@ -1,149 +1,150 @@
 {
-    "navbar": [{
-        "label": "Home",
-        "link" :"/" ,
-        "hasChildren": false
+  "navbar": [
+    {
+      "label": "Home",
+      "link": "/",
+      "hasChildren": false
     },
     {
-        "label": "Our Team",
-        "link" :"/about" ,
-        "hasChildren": false
+      "label": "Our Team",
+      "link": "/about",
+      "hasChildren": false
     },
     {
-        "label": "Our Solutions",
-        "hasChildren":true,
-        "children": [ 
-                   {
-            "label": "Green Genius",
-            "link": "https://green-genius.org/",
-            "websiteLogo": "https://i.imgur.com/V7Mg70E.png",
-            "websiteTitle": "Carbon Footprinting",
-            "websiteDescription":
-              "Green Genius helps users measure and reduce their carbon footprint with easy-to-use tools. It empowers sustainable actions for a greener future."
-          },
-          {
-            "label": "Diva Tex",
-            "link": "https://divatex.eu/",
-            "websiteLogo": "https://i.imgur.com/iqq372D.png",
-            "websiteTitle": "ERP for textile industry",
-            "websiteDescription":
-              "Diva Tex is an ERP solution for the textile industry, optimizing processes and improving efficiency.It streamlines operations for better workflow management."
-          }
-    ]
-    }
-
-],
-    "heroSection" : {
-        "h1" : "Design. Develop. Deliver", 
-        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia vero officiis explicabo accusamus eius impedit soluta doloremque mollitia veniam officia, quam unde omnis, ipsum incidunt dolorum sint sapiente minima perferendis at fuga dolor natus! Aperiam molestiae ut ipsa nisi praesentium.",
-        "button" :"Contact Us"
-    },
-    "ourClients" : {
-        "title" : "Our Clients",
-        "description" :"More than 140+ businesses have trusted DIVA-Software to grow using our design and technology expertise."
-    },
-    "ourProducts" : {
-        "title":  "Our Products",
-        "websites": [
-            {
-                "websiteName": "Green Genius",
-                "websiteTitle": "Carbon Footprinting",
-                "invert": false,
-                "websiteDescription": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia vero officiis explicabo accusamus eius impedit soluta doloremque mollitia veniam officia, quam unde omnis, ipsum incidunt dolorum sint sapiente minima perferendis at fuga dolor natus! Aperiam molestiae ut ipsa nisi praesentium.",
-                "button" :"Discover Now",
-                "imagePath" :"images/logo/logo.png",
-                "preview": "images/products/schrollama-images/product_demo.gif",
-                "customStyles":{
-                    "bgColor": "#83B435",
-                    "rotation": "6deg"
-                }
-
-            },
-            {
-                "invert": true,
-                "websiteName": "Diva Tex",
-                "websiteTitle": "ERP for textile industry",
-                "websiteDescription": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia vero officiis explicabo accusamus eius impedit soluta doloremque mollitia veniam officia, quam unde omnis, ipsum incidunt dolorum sint sapiente minima perferendis at fuga dolor natus! Aperiam molestiae ut ipsa nisi praesentium.",
-                "button" :"Discover Now",
-                "imagePath" :"images/products/diva-tex.png",
-                "preview": "images/products/schrollama-images/product_demo_02.gif",
-                "customStyles":{
-                    "bgColor": "#1869DA",
-                    "rotation": "-6deg"
-                }
-
-            }
-        ]
-
-    },
-    "contactUs" :{
-        "title" : "Contact Us",
-        "description" :"We would love to hear from you. Please fill out the form below and we will get back to you shortly",
-        "marker": "We Are Here",
-        "socials": [
-            {
-                "question": "Email",
-                "answer": "example@example.com"
-            },
-            {
-                "question": "Address",
-                "answer": "4054 Street. de Yasser Arafat, Sousse"
-            },
-            {
-                "question": "Phone",
-                "answer": "(+216) 53 333 850"
-            }
-        ],
-        "form" : {
-            "fullName": "Full Name",
-            "fullNamePlaceholder" : "Jhon Doe",
-            "email": "Email",
-            "emailPlaceholder": "Email@example.com",
-            "company":"Company",
-            "companyPlaceholder": "MAAK Corp",
-            "phone":"Phone Number",
-            "phonePlaceholder": "xxx_xxx_xxx",
-            "description": "Description",
-            "descriptionPlaceholder": "Your Message",
-            "button": "Send"
-
+      "label": "Our Solutions",
+      "hasChildren": true,
+      "children": [
+        {
+          "label": "Green Genius",
+          "link": "https://green-genius.org/",
+          "websiteLogo": "https://i.imgur.com/V7Mg70E.png",
+          "websiteTitle": "Carbon Footprinting",
+          "websiteDescription": "Green Genius helps users measure and reduce their carbon footprint with easy-to-use tools. It empowers sustainable actions for a greener future."
+        },
+        {
+          "label": "Diva Tex",
+          "link": "https://divatex.eu/",
+          "websiteLogo": "https://i.imgur.com/iqq372D.png",
+          "websiteTitle": "ERP for textile industry",
+          "websiteDescription": "Diva Tex is an ERP solution for the textile industry, optimizing processes and improving efficiency.It streamlines operations for better workflow management."
         }
-    },
-    "footer" : {
-        "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia vero officiis explicabo accusamus eius impedit soluta doloremque mollitia veniam officia, quam unde omnis, ipsum incidunt dolorum sint sapiente minima perferendis at fuga dolor natus! Aperiam molestiae ut ipsa nisi praesentium.",
-        "siteMap" : [
-            {"title": "Site Map", "sections" : [
-                {
-                "title": "Home", "href" :"#hero-section" },
-                {"title": "Our Clients", "href" :"#our-clients" },
-                {"title": "Our Products", "href" :"#products-section"},
-                {"title": "Contact Us", "href" :"/about"}
-            ]},
-            {"title" :"Socials", "sections" :[
-                {"title" : "Facebook" , "href":"#" },
-                {"title" : "Instagram" , "href":"#" },
-                {"title" : "LinkedIn" , "href":"#" }
-
-            ]}
-        ],
-        "footerTitle": "All rights reserved"
-    },
-    "aboutUs": {
-        "title": "About Us", 
-        "paragraph" : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
-        "ourTeam" : "Our Team",
-        "TeamSections":  [
-            {
-                "title" : "Developers Team"
-            },
-            {
-                "title" : "Team 2 "
-            },
-            {
-                "title" : "Team 3"
-            }
-
-        ]
-
+      ]
     }
+  ],
+  "heroSection": {
+    "h1": "Design. Develop. Deliver",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia vero officiis explicabo accusamus eius impedit soluta doloremque mollitia veniam officia, quam unde omnis, ipsum incidunt dolorum sint sapiente minima perferendis at fuga dolor natus! Aperiam molestiae ut ipsa nisi praesentium.",
+    "button": "Contact Us"
+  },
+  "ourClients": {
+    "title": "Our Clients",
+    "description": "More than 140+ businesses have trusted DIVA-Software to grow using our design and technology expertise."
+  },
+  "ourProducts": {
+    "title": "Our Products",
+    "websites": [
+      {
+        "websiteName": "Green Genius",
+        "websiteTitle": "Carbon Footprinting",
+        "invert": false,
+        "websiteDescription": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia vero officiis explicabo accusamus eius impedit soluta doloremque mollitia veniam officia, quam unde omnis, ipsum incidunt dolorum sint sapiente minima perferendis at fuga dolor natus! Aperiam molestiae ut ipsa nisi praesentium.",
+        "button": "Discover Now",
+        "imagePath": "images/logo/logo.png",
+        "preview": "images/products/schrollama-images/product_demo.gif",
+        "customStyles": {
+          "bgColor": "#83B435",
+          "rotation": "6deg"
+        }
+      },
+      {
+        "invert": true,
+        "websiteName": "Diva Tex",
+        "websiteTitle": "ERP for textile industry",
+        "websiteDescription": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia vero officiis explicabo accusamus eius impedit soluta doloremque mollitia veniam officia, quam unde omnis, ipsum incidunt dolorum sint sapiente minima perferendis at fuga dolor natus! Aperiam molestiae ut ipsa nisi praesentium.",
+        "button": "Discover Now",
+        "imagePath": "images/products/diva-tex.png",
+        "preview": "images/products/schrollama-images/product_demo_02.gif",
+        "customStyles": {
+          "bgColor": "#1869DA",
+          "rotation": "-6deg"
+        }
+      }
+    ]
+  },
+  "contactUs": {
+    "sectionTitle": "Contact Us",
+    "title": "Have A Project?",
+    "subTitle": "Let's discuss",
+    "description": "Once you submit this form,expect to hear back from us within 24h",
+    "ReachUsTitle": "Reach Us At",
+    "socials": [
+      {
+        "question": "Email",
+        "answer": "example@example.com"
+      },
+      {
+        "question": "Address",
+        "answer": "4054 Street. de Yasser Arafat, Sousse"
+      },
+      {
+        "question": "Phone",
+        "answer": "(+216) 53 333 850"
+      }
+    ],
+    "form": {
+      "fullName": "Full Name",
+      "fullNamePlaceholder": "Jhon Doe",
+      "email": "Email",
+      "emailPlaceholder": "Email@example.com",
+      "company": "Company",
+      "companyPlaceholder": "MAAK Corp",
+      "phone": "Phone Number",
+      "phonePlaceholder": "xxx_xxx_xxx",
+      "description": "Description",
+      "descriptionPlaceholder": "Your Message",
+      "button": "Send"
+    }
+  },
+  "footer": {
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia vero officiis explicabo accusamus eius impedit soluta doloremque mollitia veniam officia, quam unde omnis, ipsum incidunt dolorum sint sapiente minima perferendis at fuga dolor natus! Aperiam molestiae ut ipsa nisi praesentium.",
+    "siteMap": [
+      {
+        "title": "Site Map",
+        "sections": [
+          {
+            "title": "Home",
+            "href": "#hero-section"
+          },
+          { "title": "Our Clients", "href": "#our-clients" },
+          { "title": "Our Products", "href": "#products-section" },
+          { "title": "Contact Us", "href": "/about" }
+        ]
+      },
+      {
+        "title": "Socials",
+        "sections": [
+          { "title": "Facebook", "href": "#" },
+          { "title": "Instagram", "href": "#" },
+          { "title": "LinkedIn", "href": "#" }
+        ]
+      }
+    ],
+    "footerTitle": "All rights reserved"
+  },
+  "aboutUs": {
+    "title": "About Us",
+    "paragraph": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+    "ourTeam": "Our Team",
+    "TeamSections": [
+      {
+        "title": "Developers Team"
+      },
+      {
+        "title": "Team 2 "
+      },
+      {
+        "title": "Team 3"
+      }
+    ]
+  }
 }

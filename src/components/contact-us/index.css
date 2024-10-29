@@ -1,8 +1,0 @@
-/**
-* Used to style the map overlay
-**/
-.gradientOverlay {
-    background: rgb(255, 255, 255);
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.44021358543417366) 1%, rgba(0, 0, 0, 0.8995973389355743) 22%);
-
-}
