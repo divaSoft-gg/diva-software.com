@@ -10,8 +10,8 @@ export default function IntroductionSection() {
 
 
     return (
-        <CenteredLayout>
-            <section className="px-8 pt-10 lg:p-0">
+        <section className="px-8 py-8 lg:px-0">
+            <CenteredLayout>
 
                 <SectionsTitle title={t('aboutUs.title')} />
 
@@ -19,7 +19,7 @@ export default function IntroductionSection() {
                     {t('aboutUs.paragraph')}
                 </p>
 
-            </section>
-        </CenteredLayout>
+            </CenteredLayout>
+        </section>
     )
 }
