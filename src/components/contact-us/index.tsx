@@ -1,6 +1,5 @@
 import { Button, Input, Textarea } from "@nextui-org/react";
 import CenteredLayout from "../ui/centredLayout";
-import 'leaflet/dist/leaflet.css';
 import { useTranslation } from "react-i18next";
 import { Socials } from "../../common/types";
 import SectionsTitle from "../shared/sectionTitle";
