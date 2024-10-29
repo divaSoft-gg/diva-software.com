@@ -73,9 +73,12 @@
     ]
   },
   "contactUs": {
-    "title": "Contactez Nous",
-    "description": "Nous aimerions avoir de vos nouvelles. ",
-    "marker": "Nous Sommes Là",
+    "sectionTitle": "Contactez-nous",
+    "title": "Vous avez un projet ?",
+    "subTitle": "Discutons-en",
+    "description": "Une fois que vous aurez soumis ce formulaire, attendez-vous à recevoir une réponse de notre part dans les 24 heures",
+    "ReachUsTitle": "Contactez-nous à",
+
     "socials": [
       {
         "question": "E-mail",
