@@ -3,11 +3,13 @@ import CenteredLayout from "../ui/centredLayout";
 import { useTranslation } from "react-i18next";
 import { Socials } from "../../common/types";
 import SectionsTitle from "../shared/sectionTitle";
+import { TFunction } from 'i18next';
+
 
 
 
 export default function ContactUs() {
-    const { t } = useTranslation()
+    const { t }: { t: TFunction } = useTranslation()
     const socials: Socials[] = t('contactUs.socials', { returnObjects: true }) as Socials[];
 
 
@@ -15,14 +17,14 @@ export default function ContactUs() {
 
     return (
         <CenteredLayout>
-            <div className="mb-60">
+            <div className="mb-20">
                 <SectionsTitle title={t('contactUs.sectionTitle')} />
             </div>
 
-            <div id="contact-us" className="flex flex-row w-full p-10">
+            <div id="contact-us" className="flex flex-col w-full p-10 lg:flex-row">
 
 
-                <div className="flex flex-col w-full gap-6 ">
+                <div className="flex flex-col w-full gap-6 py-6 ">
 
                     <h6 className="text-5xl font-semibold text-left text-blue-600">{t('contactUs.title')}</h6>
                     <h6 className="text-5xl font-semibold text-left text-blue-600">{t('contactUs.subTitle')}</h6>
@@ -44,14 +46,14 @@ export default function ContactUs() {
     )
 }
 
-function ContactUsForm({ t }) {
+function ContactUsForm({ t }: { t: TFunction }) {
     return (
         <form
             name="diva-software-submissions"
             method="POST"
             data-netlify="true"
             netlify-honeypot="bot-field"
-            className="w-full px-8 lg:px-0"
+            className="w-full lg:px-0"
         >
             <input type="hidden" name="form-name" value="diva-software-submissions" />
             <div className="flex flex-col gap-6 ">
