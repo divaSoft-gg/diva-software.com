@@ -10,7 +10,7 @@ export default function OurClients() {
     return (
         <div className="dark:bg-[#161616] bg-black" id="our-clients">
             <CenteredLayout>
-                <div className="px-8 py-8 my-20 lg:px-0">
+                <div className="px-8 py-8 lg:px-0">
 
                     <h1 className="pb-3 text-4xl font-semibold leading-normal text-left text-white lg:text-6xl">{t('ourClients.title')}</h1>
                     <p className="mt-2 leading-8 text-white lg:text-lg text-md muted ">{t('ourClients.description')}</p>

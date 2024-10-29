@@ -16,10 +16,32 @@ html {
 .responsiveGrid {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
+
 #megaMenu {
     background: rgba(255, 255, 255, 0.27);
     border-radius: 16px;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.26);
+}
+
+.productCard {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.productCardTopGrid {
+    background-size: 20px 20px;
+
+    background-image:
+        linear-gradient(to bottom, #efeff0af 0.7px, transparent 0.4px),
+        linear-gradient(to left, #e0dddc6e 0.7px, transparent 0.4px);
+
+    background-position: top center;
+    image-rendering: pixelated;
+
+    z-index: 0 !important;
+
+    mask-image: linear-gradient(to bottom, transparent, 10%, #ffffff, 90%, transparent);
+    -mask-image: linear-gradient(to bottom, transparent, 10%, #ffffff, 90%, transparent);
+    -webkit-mask-image: linear-gradient(to bottom, transparent, 10%, #ffffff, 90%, transparent);
 }
