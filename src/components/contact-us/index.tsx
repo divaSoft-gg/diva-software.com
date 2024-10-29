@@ -15,6 +15,7 @@ export default function ContactUs() {
 
 
     return (
+
         <CenteredLayout>
 
 
@@ -27,7 +28,7 @@ export default function ContactUs() {
                     <p className="py-6 text-left text-gray-700 text-medium w-96 dark:text-white">{t('contactUs.description')}</p>
                     <ul className="flex flex-col w-full gap-2 pb-6 list-none lg:pb-0">
                         <li>
-                            <h6 className="text-sm font-semibold tracking-[0.2rem] text-gray-500 py-4 dark:text-white">{t('contactUs.ReachUsTitle')}</h6>
+                            <h6 className="py-4 text-sm font-semibold tracking-wide text-gray-500 dark:text-white">{t('contactUs.ReachUsTitle')}</h6>
                         </li>
                         {socials.map((element: Socials, index: number) => (
                             <li key={index} >
