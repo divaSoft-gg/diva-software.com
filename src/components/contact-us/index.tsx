@@ -4,38 +4,34 @@ import { useTranslation } from "react-i18next";
 import { Socials } from "../../common/types";
 import { TFunction } from 'i18next';
 
-
-
-
 export default function ContactUs() {
     const { t }: { t: TFunction } = useTranslation()
     const socials: Socials[] = t('contactUs.socials', { returnObjects: true }) as Socials[];
     return (
 
-        <CenteredLayout>
+        <section id="contact-us">
+            <CenteredLayout>
+                <div className="flex flex-col w-full lg:flex-row">
+                    <div className="flex flex-col w-full gap-6 ">
 
-
-            <div id="contact-us" className="flex flex-col w-full p-4 lg:flex-row">
-
-
-                <div className="flex flex-col w-full gap-6 ">
-
-                    <h6 className="font-semibold text-left text-black text-7xl dark:text-white">{t('contactUs.title')} <br />{t('contactUs.subTitle')}</h6>
-                    <p className="py-6 text-left text-gray-700 text-medium w-96 dark:text-white">{t('contactUs.description')}</p>
-                    <ul className="flex flex-col w-full gap-2 pb-6 list-none lg:pb-0">
-                        <li>
-                            <h6 className="py-4 text-sm font-semibold tracking-wide text-gray-500 dark:text-white">{t('contactUs.ReachUsTitle')}</h6>
-                        </li>
-                        {socials.map((element: Socials, index: number) => (
-                            <li key={index} >
-                                <span className="text-lg font-semibold text-black dark:text-white">{element.answer}</span>
+                        <h6 className="font-semibold text-left text-black text-7xl dark:text-white">{t('contactUs.title')} <br />{t('contactUs.subTitle')}</h6>
+                        <p className="py-6 text-left text-gray-700 text-medium w-96 dark:text-white">{t('contactUs.description')}</p>
+                        <ul className="flex flex-col w-full gap-2 pb-6 list-none lg:pb-0">
+                            <li>
+                                <h6 className="py-4 text-sm font-semibold tracking-wide text-gray-500 dark:text-white">{t('contactUs.ReachUsTitle')}</h6>
                             </li>
-                        ))}
-                    </ul>
+                            {socials.map((element: Socials, index: number) => (
+                                <li key={index} >
+                                    <span className="text-lg font-semibold text-black dark:text-white">{element.answer}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                    <ContactUsForm t={t} />
                 </div>
-                <ContactUsForm t={t} />
-            </div>
-        </CenteredLayout>
+            </CenteredLayout>
+        </section>
+
     )
 }
 
