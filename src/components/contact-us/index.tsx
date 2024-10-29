@@ -10,16 +10,12 @@ import { TFunction } from 'i18next';
 export default function ContactUs() {
     const { t }: { t: TFunction } = useTranslation()
     const socials: Socials[] = t('contactUs.socials', { returnObjects: true }) as Socials[];
-
-
-
-
     return (
 
         <CenteredLayout>
 
 
-            <div id="contact-us" className="flex flex-col w-full p-4 lg:flex-row lg:p-0">
+            <div id="contact-us" className="flex flex-col w-full p-4 lg:flex-row">
 
 
                 <div className="flex flex-col w-full gap-6 ">

@@ -13,7 +13,7 @@ export default function ProductsSection() {
 
 
     return (
-        <section className="p-20" id="products-section">
+        <section id="products-section">
             <CenteredLayout>
                 <h1 className="mb-10 text-4xl font-semibold leading-normal text-left text-black dark:text-white lg:text-6xl ">{t('ourProducts.title')}</h1>
                 <section className="flex flex-col gap-10 ">
