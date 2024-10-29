@@ -9,7 +9,7 @@ export default function Home() {
     const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
 
     return (
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-24">
             <HeroSection />
             <OurClients />
             {isMobile ? <ProductsSectionMobile /> : <ProductsSection />}
