@@ -9,11 +9,11 @@ export default function OurTeam() {
     return (
         <section id="our-team">
             <CenteredLayout>
-                <h1 className="px-8 pb-3 text-4xl font-semibold leading-normal text-left lg:text-6xl lg:px-0">{t('aboutUs.ourTeam')}</h1>
+                <h1 className="px-4 pb-3 text-4xl font-semibold leading-normal text-left lg:text-6xl lg:px-0">{t('aboutUs.ourTeam')}</h1>
 
                 {OUR_TEAM.map((element) => (
-                    <div className="flex flex-col gap-10">
-                        <h2 className="py-10 text-xl font-bold tracking-wider text-black dark:text-white">{element.title}
+                    <div className="flex flex-col gap-10 p-4 lg:p-0">
+                        <h2 className="py-6 text-xl font-bold tracking-wider text-black lg:py-10 dark:text-white">{element.title}
                         </h2>
                         <div className="grid gap-4 p-4 responsiveGrid">
                             {
