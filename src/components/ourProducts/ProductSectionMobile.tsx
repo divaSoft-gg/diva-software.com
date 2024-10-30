@@ -40,21 +40,21 @@ export default function ProductsSectionMobile() {
                                         size="md"
                                         className="self-start w-fit"
                                     >
-                                        {product.button}
+                                        {solution.button}
                                     </Button>
 
                                     <div className="relative my-10">
                                         <div
                                             className="absolute w-full h-full transition-all ease-in-out -z-10 rounded-xl duration-250"
                                             style={{
-                                                backgroundColor: product.customStyles.bgColor,
-                                                rotate: product.customStyles.rotation,
+                                                backgroundColor: solution.customStyles.bgColor,
+                                                rotate: solution.customStyles.rotation,
                                             }}
                                         >
                                         </div>
 
                                         <Image
-                                            src={`${product?.preview}`}
+                                            src={`${solution?.preview}`}
                                             width={700}
                                             className="w-full "
                                         />
