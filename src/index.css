@@ -49,3 +49,8 @@ html {
     -mask-image: linear-gradient(to bottom, transparent, 10%, #ffffff, 90%, transparent);
     -webkit-mask-image: linear-gradient(to bottom, transparent, 10%, #ffffff, 90%, transparent);
 }
+.dark .productCardTopGrid {
+    background-image:
+        linear-gradient(to bottom, #3a3a3a 0.7px, transparent 0.4px), /* Adjust to your dark theme colors */
+        linear-gradient(to left, #4a4a4a 0.7px, transparent 0.4px);
+}
