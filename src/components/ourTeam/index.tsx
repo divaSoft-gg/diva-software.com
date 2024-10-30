@@ -1,42 +1,43 @@
 import { useTranslation } from "react-i18next";
 import CenteredLayout from "../ui/centredLayout";
-import TeamCard from "../teamMemberCard";
 import { OUR_TEAM } from "../../assets/data";
-import { ITeam, TeamInformations } from "../../common/types";
-
+import { Image } from "@nextui-org/react";
 
 
 export default function OurTeam() {
     const { t } = useTranslation();
-    const teamSection: { title: string }[] = t('aboutUs.TeamSections', { returnObjects: true }) as { title: string }[];
-
-
     return (
-        <section>
-
+        <section id="our-team">
             <CenteredLayout>
                 <h1 className="px-8 pb-3 text-4xl font-semibold leading-normal text-left lg:text-6xl lg:px-0">{t('aboutUs.ourTeam')}</h1>
 
-                {
-                    teamSection.map((item: { title: string }, index: number) => (
-                        <section className="my-20" key={index}>
-                            <h2 className="px-8 mb-4 text-xl font-bold text-black lg:px-0 dark:text-white lg:text-2xl">{item.title}</h2>
+                {OUR_TEAM.map((element) => (
+                    <div className="flex flex-col gap-10">
+                        <h2 className="py-10 text-xl font-bold tracking-wider text-black dark:text-white">{element.title}
+                        </h2>
+                        <div className="grid gap-4 p-4 responsiveGrid">
+                            {
+                                element.data.map((item) => (
+                                    <div className="relative w-full group h-fit">
+                                        <Image
+                                            className="object-cover object-center w-full h-full transition duration-300 ease-in-out rounded-lg -z-10 group-hover:blur-sm"
+                                            src={item.imagePath}
+                                            alt={`${item.name} Image`}
+                                        />
+                                        <div className="absolute inset-0 flex items-end justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                                            <div className="w-full p-2 text-center text-white bg-black bg-opacity-50 rounded-b-lg">
+                                                <h4 className="text-lg font-bold">{item.name}</h4>
+                                                <small className="text-sm">{item.jobTitle}</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                ))
+                            }
+                        </div>
 
-                            <div className="grid gap-4 responsiveGrid">
-                                {
-                                    OUR_TEAM.map((element: ITeam) => (
-                                        element.data.map(
-                                            (member: TeamInformations, elementIndex: number) => <TeamCard key={elementIndex} {...member} />
-                                        )
-                                    ))
-                                }
-                            </div>
-
-                        </section>
-                    ))
-                }
-
+                    </div>
+                ))}
             </CenteredLayout>
         </section>
-    );
+    )
 }

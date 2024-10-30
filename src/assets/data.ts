@@ -64,6 +64,34 @@ export const OUR_TEAM: ITeam[] = [
         jobTitle: "Web Developer",
         image: "https://i.pravatar.cc/150?u=a04258114e29026702d",
       },
+      {
+        imagePath:
+          "https://tailwindui.com/plus/img/ecommerce-images/home-page-03-hero-image-tile-02.jpg",
+        name: "rfr rfr",
+        jobTitle: "Web Developer",
+        image: "https://i.pravatar.cc/150?u=a04258114e29026702d",
+      },
+      {
+        imagePath:
+          "https://tailwindui.com/plus/img/ecommerce-images/home-page-03-hero-image-tile-02.jpg",
+        name: "rfr rfr",
+        jobTitle: "Web Developer",
+        image: "https://i.pravatar.cc/150?u=a04258114e29026702d",
+      },
+      {
+        imagePath:
+          "https://tailwindui.com/plus/img/ecommerce-images/home-page-03-hero-image-tile-02.jpg",
+        name: "rfr rfr",
+        jobTitle: "Web Developer",
+        image: "https://i.pravatar.cc/150?u=a04258114e29026702d",
+      },
+      {
+        imagePath:
+          "https://tailwindui.com/plus/img/ecommerce-images/home-page-03-hero-image-tile-02.jpg",
+        name: "rfr rfr",
+        jobTitle: "Web Developer",
+        image: "https://i.pravatar.cc/150?u=a04258114e29026702d",
+      },
     ],
   },
   {
