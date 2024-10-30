@@ -11,7 +11,7 @@ export default function ContactUs() {
 
         <section id="contact-us">
             <CenteredLayout>
-                <div className="flex flex-col w-full lg:flex-row">
+                <div className="flex flex-col w-full p-4 lg:p-0 lg:flex-row">
                     <div className="flex flex-col w-full gap-6 ">
 
                         <h6 className="font-semibold text-left text-black text-7xl dark:text-white">{t('contactUs.title')} <br />{t('contactUs.subTitle')}</h6>
