@@ -29,6 +29,10 @@ html {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
+.dark .productCard {
+    box-shadow: rgba(255, 250, 250, 1) 0px 1px 4px;
+}
+
 .productCardTopGrid {
     background-size: 20px 20px;
 
@@ -39,7 +43,7 @@ html {
     background-position: top center;
     image-rendering: pixelated;
 
-    z-index: 0 !important;
+    z-index: -9 !important;
 
     mask-image: linear-gradient(to bottom, transparent, 10%, #ffffff, 90%, transparent);
     -mask-image: linear-gradient(to bottom, transparent, 10%, #ffffff, 90%, transparent);
