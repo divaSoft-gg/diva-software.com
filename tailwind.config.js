@@ -11,7 +11,6 @@ export default {
   theme: {
     extend: {
       animation: {
-        // slide: 'slide 20s linear infinite',
         slideLtr: 'slideLtr 20s linear infinite', // LTR animation
         slideRtl: 'slideRtl 20s linear infinite', // RTL animation
       },

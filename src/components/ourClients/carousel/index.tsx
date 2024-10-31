@@ -1,13 +1,13 @@
-import { OUR_CLIENTS } from '../../../assets/data';
 import { cn, shuffleArray } from '../../../common/utils';
 import { IClient } from '../../../common/types';
 import { Tooltip } from '@nextui-org/react';
 import CardDetils from '../../shared/ourClientCard';
+import { useTranslation } from 'react-i18next';
 
 
 export default function AutoplayCarousel({ directionClass, elementIndex }: { directionClass: string, elementIndex: number }) {
-    const ourClient: IClient[] = elementIndex == 0 ? OUR_CLIENTS : shuffleArray(OUR_CLIENTS)
-
+    const { t } = useTranslation()
+    const clients: IClient[] = elementIndex === 0 ? t('ourClients.clientsDetails', { returnObjects: true }) as IClient[] : shuffleArray(t('ourClients.clientsDetails', { returnObjects: true }) as IClient[]);
 
     return (
         <div className="relative w-full h-16 overflow-hidden">
@@ -16,7 +16,7 @@ export default function AutoplayCarousel({ directionClass, elementIndex }: { dir
                 onMouseEnter={(e) => e.currentTarget.classList.add("pause")}
                 onMouseLeave={(e) => e.currentTarget.classList.remove("pause")}
             >
-                {ourClient.map((detail, index) => (
+                {clients.map((detail, index) => (
                     <CarouselItem
                         key={index}
                         imgUrl={detail.logo}
@@ -25,7 +25,7 @@ export default function AutoplayCarousel({ directionClass, elementIndex }: { dir
                         websiteLink={detail.websiteLink}
                     />
                 ))}
-                {ourClient.map((detail, index) => (
+                {clients.map((detail, index) => (
                     <CarouselItem
                         key={`${index}-clone`}
                         imgUrl={detail.logo}

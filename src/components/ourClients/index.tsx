@@ -5,6 +5,7 @@ import AutoplayCarousel from "./carousel"
 
 export default function OurClients() {
     const { t } = useTranslation()
+
     return (
         <section id="our-clients" className="dark:bg-[#161616] bg-black py-8 lg:px-0 px-4">
             <CenteredLayout>
