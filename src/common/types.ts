@@ -25,7 +25,7 @@ export interface Socials {
   question: string;
   answer: string;
 }
-export interface Products {
+export interface Solutions {
   button: string;
   imagePath: string;
   websiteDescription: string;
