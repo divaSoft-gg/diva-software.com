@@ -25,6 +25,26 @@ export const OUR_CLIENTS: IClient[] = [
     logo: "/images/clients/client5.svg",
     name: "NAFNAF",
   },
+  {
+    logo: "images/clients/client1.svg",
+    name: "Alsico",
+  },
+  {
+    logo: "/images/clients/client2.svg",
+    name: "Granjard",
+  },
+  {
+    logo: "/images/clients/client3.svg",
+    name: "Aubade",
+  },
+  {
+    logo: "/images/clients/client4.svg",
+    name: "Bleu Oceane",
+  },
+  {
+    logo: "/images/clients/client5.svg",
+    name: "NAFNAF",
+  },
 ];
 
 // ***********************************
