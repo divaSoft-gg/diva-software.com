@@ -11,9 +11,10 @@ export default function CardDetils({ imgTitle, imgUrl, description, websiteLink 
                     radius="sm"
                     src={imgUrl}
                     width={60}
+                    className='dark:invert-0 invert'
                 />
                 <div className="flex flex-col">
-                    <p className="text-lg">{imgTitle}</p>
+                    <p className="text-lg ">{imgTitle}</p>
                 </div>
             </CardHeader>
             <Divider />
