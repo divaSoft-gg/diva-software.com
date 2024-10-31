@@ -1,4 +1,4 @@
-import { Card, CardBody, CardFooter, CardHeader, Divider, Image, Link, Tooltip } from '@nextui-org/react';
+import { Card, CardBody, CardFooter, CardHeader, Divider, Image, Link } from '@nextui-org/react';
 
 
 export default function CardDetils({ imgTitle, imgUrl, description, websiteLink }: { imgTitle: string, imgUrl: string, description: string, websiteLink: string }) {
