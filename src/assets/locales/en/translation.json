@@ -40,8 +40,8 @@
     "title": "Our Clients",
     "description": "More than 140+ businesses have trusted DIVA-Software to grow using our design and technology expertise."
   },
-  "ourProducts": {
-    "title": "Our Products",
+  "ourSolutions": {
+    "title": "Our Solutions",
     "websites": [
       {
         "websiteName": "Green Genius",
@@ -50,7 +50,7 @@
         "websiteDescription": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia vero officiis explicabo accusamus eius impedit soluta doloremque mollitia veniam officia, quam unde omnis, ipsum incidunt dolorum sint sapiente minima perferendis at fuga dolor natus! Aperiam molestiae ut ipsa nisi praesentium.",
         "button": "Discover Now",
         "imagePath": "images/logo/logo.png",
-        "preview": "images/products/schrollama-images/product_demo.gif",
+        "preview": "images/solutions/schrollama-images/product_demo.gif",
         "customStyles": {
           "bgColor": "#83B435",
           "rotation": "6deg"
@@ -62,8 +62,8 @@
         "websiteTitle": "ERP for textile industry",
         "websiteDescription": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia vero officiis explicabo accusamus eius impedit soluta doloremque mollitia veniam officia, quam unde omnis, ipsum incidunt dolorum sint sapiente minima perferendis at fuga dolor natus! Aperiam molestiae ut ipsa nisi praesentium.",
         "button": "Discover Now",
-        "imagePath": "images/products/diva-tex.png",
-        "preview": "images/products/schrollama-images/product_demo_02.gif",
+        "imagePath": "images/solutions/diva-tex.png",
+        "preview": "images/solutions/schrollama-images/product_demo_02.gif",
         "customStyles": {
           "bgColor": "#1869DA",
           "rotation": "-6deg"
@@ -116,7 +116,7 @@
             "href": "#hero-section"
           },
           { "title": "Our Clients", "href": "#our-clients" },
-          { "title": "Our Products", "href": "#products-section" },
+          { "title": "Our Solutions", "href": "#solutions-section" },
           { "title": "Contact Us", "href": "/about" }
         ]
       },
