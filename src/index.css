@@ -45,3 +45,7 @@ html {
     -mask-image: linear-gradient(to bottom, transparent, 10%, #ffffff, 90%, transparent);
     -webkit-mask-image: linear-gradient(to bottom, transparent, 10%, #ffffff, 90%, transparent);
 }
+
+.pause {
+    animation-play-state: paused;
+}

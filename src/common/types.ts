@@ -7,6 +7,8 @@ export interface IStep {
 export interface IClient {
   logo: string;
   name: string;
+  description: string;
+  websiteLink: string;
 }
 
 export interface FooterSiteMap {
