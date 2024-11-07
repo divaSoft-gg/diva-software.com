@@ -12,14 +12,12 @@ import {
 import React from 'react'
 import { NavItemsProps } from '../../../../common/types'
 import { ServicesCard } from '../../../shared/card'
-import { useMediaQuery } from 'react-responsive'
 import ThemeToggler from '../../../shared/ThemeSelector'
 import LanguageDropdown from '../../../shared/languageDropdown'
 
 
 export function MobileNavbar({ navItems }: Readonly<{ navItems: NavItemsProps[] }>) {
     const [isMenuOpen, setIsMenuOpen] = React.useReducer((current) => !current, false)
-    const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
 
 
     return (
@@ -29,18 +27,15 @@ export function MobileNavbar({ navItems }: Readonly<{ navItems: NavItemsProps[] 
                     <img src='https://ik.imagekit.io/divadev/DIVA/logo.png' alt='Website Logo' width={40} />
                 </NavbarBrand>
             </NavbarContent>
-            {isMobile &&
-                (
-                    <>
-                        <NavbarContent justify='start'>
-                            <ThemeToggler />
-                        </NavbarContent>
-                        <NavbarContent>
-                            <LanguageDropdown />
-                        </NavbarContent>
-                    </>
 
-                )}
+            <NavbarContent justify='start'>
+                <ThemeToggler />
+            </NavbarContent>
+            <NavbarContent>
+                <LanguageDropdown />
+            </NavbarContent>
+
+
             <NavbarContent justify='end'>
                 <NavbarMenuToggle aria-label={isMenuOpen ? 'Close menu' : 'Open menu'} className='sm:hidden' />
             </NavbarContent>

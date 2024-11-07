@@ -56,7 +56,7 @@ export default function DesktopNavBar({ navItems }: Readonly<{ navItems: NavItem
             <nav className='flex flex-row items-center justify-between max-w-[var(--max-content-width)] mx-auto'>
                 <a href='https://diva.diva-dev.tn' className='flex items-center gap-3'>
                     <img src='https://ik.imagekit.io/divadev/DIVA/logo.png' alt='Website Logo' width={40} />
-                    <span className='font-semibold text-left text-black uppercase package-dark:text-black ext-lg whitespace-nowrap'>Diva Software</span>
+                    <span className='text-lg font-semibold text-left text-black uppercase dark:text-black whitespace-nowrap'>Diva Software</span>
                 </a>
 
                 <ul className='flex flex-row items-center justify-between gap-4 font-medium'>
