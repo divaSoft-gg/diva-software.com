@@ -2,7 +2,7 @@ import { ChildrenProps, NavItemsProps } from '../../../common/types'
 export function ServicesCard({ item }: Readonly<{ item: NavItemsProps }>
 ) {
     return (
-        <div className='relative flex flex-col gap-4 p-4 py-8 mt-1 border-gray-200 shadow-sm border-y lg:flex-row lg:justify-center lg:p-0'>
+        <div className='relative flex flex-col gap-4 p-4 py-8 mt-1 border-gray-200 shadow-sm lg:flex-row lg:justify-center lg:p-0'>
             <div className="flex flex-col items-center justify-center px-8 lg:min-h-full w-fit">
                 <h3 className="text-4xl font-bold text-center text-transparent bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text">
                     Made @DivaSoftware
