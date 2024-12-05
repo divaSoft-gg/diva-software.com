@@ -111,18 +111,9 @@
     "description": "Once you submit this form, expect to hear back from us within 24 hours",
     "ReachUsTitle": "Reach Us At",
     "socials": [
-      {
-        "question": "Email",
-        "answer": "example@example.com"
-      },
-      {
-        "question": "Address",
-        "answer": "4054 Street. de Yasser Arafat, Sousse"
-      },
-      {
-        "question": "Phone",
-        "answer": "(+216) 53 333 850"
-      }
+      "example@example.com",
+      "4054 Street. de Yasser Arafat, Sousse",
+      "(+216) 53 333 850"
     ],
     "form": {
       "fullName": "Full Name",
