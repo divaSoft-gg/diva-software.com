@@ -113,18 +113,9 @@
     "ReachUsTitle": "Contactez-nous à",
 
     "socials": [
-      {
-        "question": "E-mail",
-        "answer": "exemple@exemple.com"
-      },
-      {
-        "question": "Adresse",
-        "answer": "4054 Rue. de Yasser Arafat, Sousse"
-      },
-      {
-        "question": "Téléphone",
-        "answer": "(+216) 53 333 850"
-      }
+      "exemple@exemple.com",
+      "4054 Rue. de Yasser Arafat, Sousse",
+      "(+216) 53 333 850"
     ],
     "form": {
       "fullName": "Nom et Prénom",
