@@ -79,6 +79,8 @@
       {
         "websiteName": "Green Genius",
         "invert": false,
+        "buttonHref": "https://green-genius.org/contact-us",
+
         "websiteTitle": "Empreinte Carbone",
         "websiteDescription": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia vero officiis explicabo accusamus eius impedit soluta doloremque mollitia veniam officia, quam unde omnis, ipsum incidunt dolorum sint sapiente minima perferendis at fuga dolor natus! Aperiam molestiae ut ipsa nisi praesentium.",
         "button": "Découvrez Maintenant",
@@ -93,6 +95,7 @@
         "websiteName": "Diva-Tex",
         "websiteTitle": "ERP pour l'industrie textile",
         "invert": true,
+        "buttonHref": "https://divatex.eu/demo",
 
         "websiteDescription": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia vero officiis explicabo accusamus eius impedit soluta doloremque mollitia veniam officia, quam unde omnis, ipsum incidunt dolorum sint sapiente minima perferendis at fuga dolor natus! Aperiam molestiae ut ipsa nisi praesentium.",
         "button": "Découvrez maintenant",

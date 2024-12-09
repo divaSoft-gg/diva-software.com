@@ -27,6 +27,7 @@ export interface Socials {
 }
 export interface Solutions {
   button: string;
+  buttonHref: string;
   imagePath: string;
   websiteDescription: string;
   websiteName: string;
