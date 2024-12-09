@@ -1,57 +1,80 @@
+@import url("@aymen_diva/diva-contact-form/dist/index.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
-    /* VARIABLES */
-    --max-content-width: 1200px;
+  /* VARIABLES */
+  --max-content-width: 1200px;
 }
 
 html {
-    scroll-behavior: smooth;
-    transition: all 0.3s ease-in-out;
+  scroll-behavior: smooth;
+  transition: all 0.3s ease-in-out;
 }
 
 .responsiveGrid {
-    grid-template-columns: repeat(auto-fill , minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
 }
 
 #megaMenu {
-    background: rgba(255, 255, 255, 0.27);
-    border-radius: 16px;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.26);
+  background: rgba(255, 255, 255, 0.27);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.26);
 }
 
 .productCard {
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .dark .productCard {
-    box-shadow: rgba(255, 250, 250, 1) 0px 1px 4px;
+  box-shadow: rgba(255, 250, 250, 1) 0px 1px 4px;
 }
 .productCardTopGrid {
-    background-size: 20px 20px;
-    background-image:
-        linear-gradient(to bottom, #efeff0af 0.7px, transparent 0.4px),
-        linear-gradient(to left, #e0dddc6e 0.7px, transparent 0.4px);
-    background-position: top center;
-    image-rendering: pixelated;
-    z-index: -9 !important;
-    mask-image: linear-gradient(to bottom, transparent, 10%, #ffffff, 90%, transparent);
-    -mask-image: linear-gradient(to bottom, transparent, 10%, #ffffff, 90%, transparent);
-    -webkit-mask-image: linear-gradient(to bottom, transparent, 10%, #ffffff, 90%, transparent);
+  background-size: 20px 20px;
+  background-image: linear-gradient(
+      to bottom,
+      #efeff0af 0.7px,
+      transparent 0.4px
+    ),
+    linear-gradient(to left, #e0dddc6e 0.7px, transparent 0.4px);
+  background-position: top center;
+  image-rendering: pixelated;
+  z-index: -9 !important;
+  mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    10%,
+    #ffffff,
+    90%,
+    transparent
+  );
+  -mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    10%,
+    #ffffff,
+    90%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    10%,
+    #ffffff,
+    90%,
+    transparent
+  );
 }
 
 .dark .productCardTopGrid {
-    background-image:
-        linear-gradient(to bottom, #3a3a3a 0.6px, transparent 0.4px),
-        linear-gradient(to left, #4a4a4a 0.6px, transparent 0.4px);
+  background-image: linear-gradient(to bottom, #3a3a3a 0.6px, transparent 0.4px),
+    linear-gradient(to left, #4a4a4a 0.6px, transparent 0.4px);
 }
 
 .pause {
-    animation-play-state: paused;
-}  
-
+  animation-play-state: paused;
+}

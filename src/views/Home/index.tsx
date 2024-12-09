@@ -6,14 +6,14 @@ import ProductsSection from "../../components/ourProducts";
 import ProductsSectionMobile from "../../components/ourProducts/ProductSectionMobile";
 
 export default function Home() {
-    const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
 
-    return (
-        <div className="flex flex-col gap-24">
-            <HeroSection />
-            <OurClients />
-            {isMobile ? <ProductsSectionMobile /> : <ProductsSection />}
-            <ContactUs />
-        </div>
-    )
+  return (
+    <div className="flex flex-col gap-24">
+      <HeroSection />
+      <OurClients />
+      {isMobile ? <ProductsSectionMobile /> : <ProductsSection />}
+      <ContactUs />
+    </div>
+  );
 }
