@@ -78,3 +78,39 @@ html {
 .pause {
   animation-play-state: paused;
 }
+/* Custom CSS for React Quill editor */
+.custom-quill-editor .ql-editor {
+  line-height: 1.6; /* Adjust line height for better spacing between lines */
+}
+
+.custom-quill-editor .ql-editor p {
+  margin-bottom: 16px; /* Add spacing between paragraphs */
+}
+
+.custom-quill-editor .ql-editor h1,
+.custom-quill-editor .ql-editor h2,
+.custom-quill-editor .ql-editor h3,
+.custom-quill-editor .ql-editor h4 {
+  margin-bottom: 12px; /* Add spacing below headings */
+}
+
+.custom-quill-editor .ql-editor ul,
+.custom-quill-editor .ql-editor ol {
+  margin-bottom: 16px; /* Add spacing below lists */
+}
+
+.custom-quill-editor .ql-editor li {
+  margin-bottom: 8px; /* Add spacing between list items */
+}
+
+.custom-quill-editor .ql-editor blockquote {
+  margin-bottom: 20px; /* Add spacing below blockquotes */
+}
+.custom-quill-editor .ql-container {
+  border: none; /* Removes the border around the editor content */
+}
+
+.custom-quill-editor .ql-editor {
+  border: none; /* Ensures no border is applied to the editable area */
+  outline: none; /* Removes focus outline if necessary */
+}

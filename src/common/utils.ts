@@ -15,3 +15,13 @@ export function shuffleArray(array: IClient[]) {
     .sort((a, b) => a.sort - b.sort)
     .map(({ value }) => value);
 }
+export function formatDate(date) {
+  const dateObj = new Date(date);
+
+  const formattedDate = dateObj.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "short", // 'short' gives abbreviated month name
+    day: "numeric",
+  });
+  return formattedDate;
+}
