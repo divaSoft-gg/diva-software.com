@@ -6,6 +6,11 @@
       "hasChildren": false
     },
     {
+      "label": "Blog",
+      "link": "/blog",
+      "hasChildren": false
+    },
+    {
       "label": "Our Team",
       "link": "/about",
       "hasChildren": false
