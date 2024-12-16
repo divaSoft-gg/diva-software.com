@@ -4,6 +4,7 @@ import HeroSection from "../../components/HeroSection";
 import OurClients from "../../components/ourClients";
 import ProductsSection from "../../components/ourProducts";
 import ProductsSectionMobile from "../../components/ourProducts/ProductSectionMobile";
+import ContactUsCard from "../../components/ContactUsCard";
 
 export default function Home() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
@@ -13,6 +14,7 @@ export default function Home() {
       <HeroSection />
       <OurClients />
       {isMobile ? <ProductsSectionMobile /> : <ProductsSection />}
+      <ContactUsCard />
       <ContactUs />
     </div>
   );

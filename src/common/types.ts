@@ -79,3 +79,10 @@ export interface NavItemsProps {
   hasChildren: boolean;
   children?: ChildrenProps[];
 }
+export interface locationsProps {
+  countryName: string;
+  map: string;
+  flag: string;
+  address: string;
+  list: string[];
+}
