@@ -9,7 +9,7 @@ export default function ContactUsCard() {
     returnObjects: true,
   }) as locationsProps[];
   return (
-    <section id="contact-locations-section">
+    <section id="contact-locations-section" className="px-4 lg:px-0">
       <CenteredLayout>
         <div className="flex flex-col gap-8">
           <h1 className="pb-3 text-4xl font-semibold leading-normal text-left text-black lg:text-6xl dark:text-white">
