@@ -1,7 +1,6 @@
-version: 2
 deployment:
   tasks:
-    - execute:
-        command: "rm -rf public_html/* && cp -r dist/* public_html/"
-        on:
-          - post-deploy
+    - export DEPLOYPATH=/home/divasngf/public_html/
+    - /bin/cp -R dist/index.html $DEPLOYPATH
+    - /bin/cp dist/images $DEPLOYPATH
+    - /bin/cp dist/assets $DEPLOYPATH
