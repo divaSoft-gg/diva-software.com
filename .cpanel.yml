@@ -1,0 +1,7 @@
+version: 2
+deployment:
+  tasks:
+    - execute:
+        command: "rm -rf public_html/* && cp -r dist/* public_html/"
+        on:
+          - post-deploy
